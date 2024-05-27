@@ -1,1 +1,7 @@
 testts
+<<<<<<< HEAD
+=======
+fddfdffggg
+gg
+g
+>>>>>>> feat_1
