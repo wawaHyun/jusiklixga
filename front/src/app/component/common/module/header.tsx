@@ -6,6 +6,7 @@ import LinkButton, { linkButtonTitles } from '@/app/atoms/button/LinkButton';
 import { destroyCookie, parseCookies } from 'nookies';
 import { useDispatch } from "react-redux";
 import { logout } from '../../users/service/user.service';
+import Image from 'next/image'
 
 
 function Header() {
@@ -13,16 +14,15 @@ function Header() {
 
   const dispatch = useDispatch();
   const router = useRouter();
+  const accCookies = parseCookies().accessToken
 
   useEffect(() => {
-
-      if (parseCookies().accessToken) {
+      if (accCookies) {
         setShowProfile(true)
       } else {
         setShowProfile(false)
       }
-
-  }, [parseCookies().accessToken])
+  }, [accCookies])
 
   const logoutHandler = () => {
     console.log('logout 적용 전' + parseCookies().accessToken)
@@ -50,7 +50,7 @@ function Header() {
           {showProfile &&
             <button type="button" className="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
               <span className="sr-only">Open user menu</span>
-              <img className="w-20 h-20 rounded-full" src="/img/user/profile.jpg" data-popover-target="profile-menu" />
+              <Image alt = "profile1" className="w-20 h-20 rounded-full" src="/img/user/profile.jpg" data-popover-target="profile-menu" />
             </button>
           }
 

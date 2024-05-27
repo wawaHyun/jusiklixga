@@ -3,8 +3,8 @@ package com.lixga.api.article;
 import com.lixga.api.article.model.ArticleDto;
 import com.lixga.api.article.service.ArticleService;
 import com.lixga.api.common.component.Messenger;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.responses.ApiResponses;
+// import io.swagger.v3.oas.annotations.responses.ApiResponse;
+// import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@ApiResponses(value = {
-        @ApiResponse(responseCode = "400", description = "Invalid ID supplied"),
-        @ApiResponse(responseCode = "404", description = "Customer not found") })
+// @ApiResponses(value = {
+//         @ApiResponse(responseCode = "400", description = "Invalid ID supplied"),
+//         @ApiResponse(responseCode = "404", description = "Customer not found") })
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @RequiredArgsConstructor

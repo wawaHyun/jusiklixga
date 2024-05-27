@@ -9,7 +9,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ImageVo {
-    private long imageId;
+    private Long imageId;
     String name;
     Long lastModified;
     Long lastModifiedDate;

@@ -8,7 +8,7 @@ public interface QueryService<T> {
 
     Optional<T> findById(Long id);
 
-    long count();
+    Long count();
 
     boolean existsById(Long id);
 }

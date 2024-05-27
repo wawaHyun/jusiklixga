@@ -6,7 +6,7 @@ import { PG } from '../../common/enums/PG';
 import { deleteArticleById } from '../service/article.service';
 import { useDispatch } from 'react-redux';
 
-export default function articleColumns(): GridColDef[] {
+export default function ArticleColumns(): GridColDef[] {
 
     const dispatch = useDispatch();
 

@@ -14,9 +14,9 @@ interface ILinkButton {
 const detailId:string|null = parseCookies()?.accessToken
 
 export const linkButtonTitles = [
-    { id: 0, title: 'join', path: `${PG.USER}/join2` },
+    { id: 0, title: 'join', path: `${PG.USER}/join` },
     { id: 1, title: 'Home', path: '/' },
-    { id: 3, title: 'counter', path: `${PG.DEMO}/counter` },
+    // { id: 3, title: 'counter', path: `${PG.DEMO}/counter` },
     { id: 4, title: 'board list', path: `${PG.BOARD}/list` },
     // { id:5, title: 'article list', path: `${PG.ARTICLE}/list` },
     { id: 6, title: 'My list', path: `${PG.USER}/detail/${detailId === null ? jwtDecode<any>(detailId).id:0}` }

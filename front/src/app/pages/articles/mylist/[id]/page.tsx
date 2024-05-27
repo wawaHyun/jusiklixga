@@ -1,6 +1,6 @@
 'use client'
 
-import articleColumns from "@/app/component/articles/modul/columns";
+import ArticleColumns from "@/app/component/articles/modul/columns";
 import {findCountArticle, fetchMylistArticles } from "@/app/component/articles/service/article.service";
 import { getAllArticles, getCountArticle } from "@/app/component/articles/service/article.slice";
 import { findBoardById } from "@/app/component/boards/service/board.service";
@@ -12,6 +12,7 @@ import { NextPage } from "next";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import Image from 'next/image'
 
 
 
@@ -26,7 +27,7 @@ const cards = [
 ];
 
 
-const mylistArticlesPage: NextPage = ({ params }: any) => {
+const MylistArticlesPage: NextPage = ({ params }: any) => {
     const dispatch = useDispatch()
     const mylistArticles: [] = useSelector(getAllArticles)
     const board: IBoard = useSelector(getSingleBoard)
@@ -35,7 +36,7 @@ const mylistArticlesPage: NextPage = ({ params }: any) => {
     useEffect(() => {
         dispatch(fetchMylistArticles(params.id))
         dispatch(findBoardById(params.id))
-    }, [dispatch])
+    }, [dispatch,params])
 
     const router = useRouter(); 
 
@@ -46,7 +47,7 @@ const mylistArticlesPage: NextPage = ({ params }: any) => {
                 {cards.map((data, index) => {
                     return (
                         <section className="flex-shrink-0 w-full snap-center justify-center items-center" key={index}>
-                            <img src={data} alt="Images to scroll horizontal" className="w-full h-[500px]" />
+                            <Image src={data} alt="Images to scroll horizontal2" className="w-full h-[500px]" />
                         </section>
                     );
                 })}
@@ -68,7 +69,7 @@ const mylistArticlesPage: NextPage = ({ params }: any) => {
         <div style={{ height: "100%", width: "100%", fontSize: 50 }}>
             {mylistArticles && <DataGrid // 🔥 4
                 rows={mylistArticles}
-                columns={articleColumns()}
+                columns={ArticleColumns()}
                 initialState={{
                     pagination: {
                         paginationModel: {
@@ -91,4 +92,4 @@ const mylistArticlesPage: NextPage = ({ params }: any) => {
     </>)
 }
 
-export default mylistArticlesPage
+export default MylistArticlesPage

@@ -14,7 +14,7 @@ const Home:NextPage=()=> {
       <div className="w-screen h-screen justify-center content-center">
         <div className="text-center content-center bg-center bg-bg_img bg-cover h-[70%]">
 
-          <span className="text-6xl font-bold font-['Inter'] ">TEST TEST TEST TEST TEST!<br /></span>
+          <span className="text-6xl font-bold font-['Inter'] ">Tggunggun !<br /></span>
           <span className="text-3xl font-['Inter']">test page입니다!</span><br />
 
           <div className="mt-[15%]">

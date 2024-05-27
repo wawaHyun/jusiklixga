@@ -113,7 +113,7 @@ const Login: NextPage = () => {
                         <div className="mt-4">
                             <label className="block text-gray-700 text-sm font-bold mb-2">
                                 ID
-                                <br />jaja
+                                <br />dmcclure0
                             </label>
                             <input
                                 className="text-gray-700 border border-gray-300 rounded py-2 px-4 block w-full focus:   outline-2 focus:outline-blue-700"
@@ -134,7 +134,7 @@ const Login: NextPage = () => {
                             <div className="flex justify-between">
                                 <label className="block text-gray-700 text-sm font-bold mb-2">
                                     Password
-                                    <br />jaj#54g
+                                    <br />pO2(eO73)%@
                                 </label>
                             </div>
                             <input

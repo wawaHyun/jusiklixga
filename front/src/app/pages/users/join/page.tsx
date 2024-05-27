@@ -9,7 +9,7 @@ import { joinUser } from "@/app/component/users/service/user.service";
 import { useSelector } from "react-redux";
 import { getSingleUser } from "@/app/component/users/service/user.slice";
 
-export default function Join2() {
+export default function Join() {
 
 
   const router = useRouter();
@@ -31,11 +31,12 @@ export default function Join2() {
     dispatch(joinUser(user))
   }
 
+
   useEffect(() => {
-    if (join === 'SUCCESS') {
-      router.push(`/`)
-    }
-  }, [join])
+    // if (join === 'SUCCESS') {
+    //   router.push(`/`)
+    // }
+  }, [])
 
 
 

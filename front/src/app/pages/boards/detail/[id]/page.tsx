@@ -33,7 +33,7 @@ export default function BoardDetailPage({ params }: any) {
 
   useEffect(() => {
     dispatch(findBoardById(params.id))
-  }, [dispatch])
+  }, [dispatch,params])
 
   return (<>
 

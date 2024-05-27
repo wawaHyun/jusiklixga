@@ -6,7 +6,6 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import org.apache.el.stream.Stream;
 import org.springframework.stereotype.Service;
 
 import com.lixga.api.common.component.JwtProvider;
@@ -97,6 +96,14 @@ public class UserServiceImpl implements UserService {
         Optional<User> user = repo.findUsersByUsername(username);
         // log.info("findUsersByUsername {}", user);
         return Optional.of(entityToDto(user.get()));
+    }
+
+    @Override
+    public Messenger existsByUsername(String username) {
+        log.info(username);
+        return Messenger.builder()
+                .message(repo.existsByUsername(username)?"true":"false")
+                .build();
     }
 
 }

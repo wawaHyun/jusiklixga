@@ -60,7 +60,7 @@ export default function ArticleSave({ params }: any) {
 
   useEffect(() => {
     dispatch(fetchAllBoards(1))
-  }, [])
+  }, [dispatch])
 
 
 

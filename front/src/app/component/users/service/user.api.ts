@@ -62,7 +62,7 @@ export const deleteUserByIdAPI = async (props: IUser) => {
 
 export const loginUserAPI = async (props: any) => {
     try {
-        const response = await instance().post('/api/auth/login', props)
+        const response = await instance().post('/api/users/login', props)
         return response.data
     } catch (error) {
         console.log(error, "loginUserByIdAPI EERR!!!")
@@ -83,7 +83,7 @@ export const joinUserAPI = async (props: any) => {
 
 export const existsByUsernameAPI = async (username: string) => {
     try {
-        const response = await instance().get('/api/auth/existName', {
+        const response = await instance().get('/api/users/check', {
             params: {username} 
         })
         console.log("exist username response "+ response.data)

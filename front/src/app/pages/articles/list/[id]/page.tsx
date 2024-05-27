@@ -2,7 +2,7 @@
 
 
 import MoveBotton from "@/app/atoms/button/MoveButton";
-import articleColumns from "@/app/component/articles/modul/columns";
+import ArticleColumns from "@/app/component/articles/modul/columns";
 import { findByBoard, fetchAllArticles, findCountArticle } from "@/app/component/articles/service/article.service";
 import { getAllArticles, getCountArticle } from "@/app/component/articles/service/article.slice";
 import { findBoardById } from "@/app/component/boards/service/board.service";
@@ -14,6 +14,7 @@ import { NextPage } from "next";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import Image from 'next/image'
 
 
 
@@ -45,7 +46,7 @@ const AllarticlesPage: NextPage = ({ params }: any) => {
 
     useEffect(() => {
         dispatch(findBoardById(params.id))
-    }, [])
+    }, [dispatch,params])
 
     const router = useRouter();
 
@@ -59,9 +60,9 @@ const AllarticlesPage: NextPage = ({ params }: any) => {
                             className="flex-shrink-0 w-full snap-center justify-center items-center"
                             key={index}
                         >
-                            <img
+                            <Image
                                 src={data}
-                                alt="Images to scroll horizontal"
+                                alt="Images to scroll horizontal1"
                                 className="w-full h-[500px]"
                             />
                         </section>
@@ -89,7 +90,7 @@ const AllarticlesPage: NextPage = ({ params }: any) => {
         <div style={{ height: "100%", width: "100%", fontSize: 50 }}>
             {allArticles && <DataGrid 
                 rows={allArticles}
-                columns={articleColumns()}
+                columns={ArticleColumns()}
                 initialState={{
                     pagination: {
                         paginationModel: {

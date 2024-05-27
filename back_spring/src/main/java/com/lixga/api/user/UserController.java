@@ -2,6 +2,7 @@ package com.lixga.api.user;
 
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
@@ -9,15 +10,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import com.lixga.api.common.component.Messenger;
 import com.lixga.api.user.model.UserDto;
 import com.lixga.api.user.service.UserService;
-
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 
 @ApiResponses(value = {
         @ApiResponse(responseCode = "400", description = "Invalid ID supplied"),
@@ -85,5 +81,10 @@ public class UserController {
         log.info("입력받은 정보 : {}", param.toString());
         return ResponseEntity.ok(ser.login(param));
     }
-
+    
+    @GetMapping(path = "/check")
+    public ResponseEntity<Messenger> findByUsername(@RequestParam String username) {
+        log.info(username);
+        return ResponseEntity.ok(ser.existsByUsername(username));
+    }
 }

@@ -12,12 +12,12 @@ import com.lixga.api.board.model.BoardDto;
 import com.lixga.api.board.service.BoardService;
 import com.lixga.api.common.component.Messenger;
 
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.responses.ApiResponses;
+// import io.swagger.v3.oas.annotations.responses.ApiResponse;
+// import io.swagger.v3.oas.annotations.responses.ApiResponses;
 
-@ApiResponses(value = {
-        @ApiResponse(responseCode = "400", description = "Invalid ID supplied"),
-        @ApiResponse(responseCode = "404", description = "Customer not found") })
+// @ApiResponses(value = {
+//         @ApiResponse(responseCode = "400", description = "Invalid ID supplied"),
+//         @ApiResponse(responseCode = "404", description = "Customer not found") })
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @RequiredArgsConstructor

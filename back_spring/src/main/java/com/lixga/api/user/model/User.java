@@ -20,12 +20,17 @@ public class User extends BaseEntity {
     @Column(nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String username;
     private String password;
     private String name;
+    private String age;
+    private String email;
+    private String address;
     private String phone;
-
+    private String asset;
+    private String mbti;
+    private String investment_propensity;
+    
     @Column(name = "address_id")
     private Long addressId;
 

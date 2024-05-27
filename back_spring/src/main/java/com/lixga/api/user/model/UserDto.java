@@ -2,9 +2,7 @@ package com.lixga.api.user.model;
 
 import lombok.*;
 
-
 import org.springframework.stereotype.Component;
-
 
 @Component
 @Getter

@@ -34,7 +34,7 @@ export default function ArticleDetailPage({ params }: any) {
   useEffect(() => {
     dispatch(fetchAllBoards(1))
     dispatch(findArticleById(params.id))
-  }, [])
+  }, [dispatch,params])
 
   return (
     <form className="max-w mx-auto" onSubmit={handleSubmit(onSubmit)}>
