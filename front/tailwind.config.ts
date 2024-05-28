@@ -15,6 +15,20 @@ const config: Config = {
           "bg_img": "url('https://img.freepik.com/premium-photo/abstract-forex-chart-with-candlestick-graph-index-tech-hologram-blurry-bright-city-background-trade-stock-finance-concept-double-exposure_670147-11705.jpg?w=996')",
 
       },
+      colors: {
+        gguntheme: {
+          110: "#FFF5E0",
+          120: "#FF6969",
+          130: "#C70039",
+          140: "#141E46",
+
+          210 : "#FF204E",
+          220 : "#A0153E",
+          230 : "#5D0E41",
+          240 : "#00224D",
+        },
+      },  
+      
     },
   },
   plugins: [],
