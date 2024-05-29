@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit"
-import { deleteUserById, fetchAllUsers, findUserById, modifyUserById, findCountUsers, loginUser, joinUser, existsByUsername, logout, userlist } from "./user.service"
+import { deleteUserById, fetchAllUsers, findUserById, modifyUserById, findCountUsers, loginUser, joinUser, existsByUsername, logout } from "./user.service"
 import { IUser } from "../model/user.model"
 
 const userThunks = [fetchAllUsers]
@@ -45,7 +45,7 @@ export const userSlice = createSlice({
             .addCase(loginUser.fulfilled, (state: any, { payload }: any) => { state.auth = payload })
             .addCase(joinUser.fulfilled, (state: any, { payload }: any) => { state.json = payload })
             .addCase(existsByUsername.fulfilled, (state: any, { payload }: any) => { state.text = payload })
-            .addCase(userlist.fulfilled, (state: any, { payload }: any) => { state.array = payload })
+            // .addCase(userlist.fulfilled, (state: any, { payload }: any) => { state.array = payload })
     }
 })
 

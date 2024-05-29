@@ -15,8 +15,8 @@ const data = {
       data: [
         { x: 'January', y: 4 },
         { x: 'February', y: 2 },
-        { x: 'March', y: 8 },
-        { x: 'April', y: 1 },
+        { x: 'March', y: 3 },
+        { x: 'April', y: 5 },
         { x: 'May', y: 5 }
       ],
       yAxisID: 'y_sub',
@@ -26,7 +26,7 @@ const data = {
       label: 'Dataset 2',
       backgroundColor: 'rgb(255, 99, 132)',
       data: [
-        { x: 'January', y: 20 },
+        { x: 'January', y: 14 },
         { x: 'February', y: 20 },
         { x: 'March', y: 32 },
         { x: 'April', y: 41 },
@@ -164,7 +164,7 @@ const options = {
   }
 };
 
-const MyChart = () => {
+const Chart2 = () => {
   return (
     <Container>
       <Line type="line" data={data} options={options} />
@@ -172,7 +172,7 @@ const MyChart = () => {
   );
 };
 
-export default MyChart;
+export default Chart2;
 
 const Container = styled.div`
   width: 90vw;

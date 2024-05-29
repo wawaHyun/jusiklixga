@@ -1,6 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { countUsersAPI, deleteUserByIdAPI, existsByUsernameAPI, fetchAllUsersAPI, findUserByIdAPI, joinUserAPI, loginUserAPI, logoutAPI, modifyUserByIdAPI, userlistAPI } from "./user.api";
+import { countUsersAPI, deleteUserByIdAPI, existsByUsernameAPI, fetchAllUsersAPI, findUserByIdAPI, joinUserAPI, loginUserAPI, logoutAPI, modifyUserByIdAPI } from "./user.api";
 import { IUser } from "../model/user.model";
+import { handlerAPI } from "./user.prisma";
 
 export const fetchAllUsers: any = createAsyncThunk(
     'users/fetchAllUsers',
@@ -47,7 +48,6 @@ export const logout:any = createAsyncThunk(
     async () => await logoutAPI()
 )
 
-export const userlist:any = createAsyncThunk(
-    'userlist',
-    async (id:number) => await userlistAPI()
-)
+// export const userlist:any = (
+//     async () => await handlerAPI()
+// )
