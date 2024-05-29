@@ -1,6 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { countUsersAPI, deleteUserByIdAPI, existsByUsernameAPI, fetchAllUsersAPI, findUserByIdAPI, joinUserAPI, loginUserAPI, logoutAPI, modifyUserByIdAPI, userlistAPI } from "./user.api";
+import { countUsersAPI, deleteUserByIdAPI, existsByUsernameAPI, fetchAllUsersAPI, findUserByIdAPI, handlerAPI, joinUserAPI, loginUserAPI, logoutAPI, modifyUserByIdAPI, userlistAPI } from "./user.api";
 import { IUser } from "../model/user.model";
+import { Iresponse } from "@/app/pages/jusik/SE/news/page";
 
 export const fetchAllUsers: any = createAsyncThunk(
     'users/fetchAllUsers',
@@ -48,6 +49,6 @@ export const logout:any = createAsyncThunk(
 )
 
 export const userlist:any = createAsyncThunk(
-    'userlist',
-    async (id:number) => await userlistAPI()
+    'users/userlist',
+    async (req:Iresponse) => await handlerAPI(req)
 )

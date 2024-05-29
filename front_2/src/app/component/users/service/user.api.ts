@@ -126,11 +126,14 @@ export const userlistAPI222 = async () => {
 
 
 
+
+
 export const userlistAPI333 = async (id:number) => {
     const response = await fetch(`http://localhost:3000/users/${id}`);
     const user = await response.json();
     return user;
 }
+
 
 userlistAPI333(1).then(user => console.log(user)).catch(error => console.error('Error fetching user:', error));
 
@@ -147,43 +150,44 @@ export async function userlistAPI() {
 
 import { NextApiRequest, NextApiResponse } from "next";
 import { PrismaClient } from "@prisma/client";
-import { userlist } from "./user.service"
+``
+import { NextResponse } from "next/server"
+import { Iresponse } from "@/app/pages/jusik/SE/news/page"
 
-const client = new PrismaClient();
+export const client = new PrismaClient();
 
-
-export async function handler(
-    req: NextApiRequest,
-    res: NextApiResponse
+export async function handlerAPI(
+    // req: NextApiRequest
+    // res: NextApiResponse
+    req:Iresponse
 ) {
     if (req.method === "GET") {
         const userlist = await client.users.findMany({
-            where: {
-                username: "dmcclure0",
-            },
+           
         });
-        const userli2st = await client.users.findFirst({
-            where: {
-                username: "",
-            },
-        });
-        const uniqUsers1 = await client.users.findUnique({
-            where: {
-                id: 1,
-            },
-        });
-        res.json({ ok: true });
+        console.log(JSON.stringify(userlist))
+        // const userli2st = await client.users.findFirst({
+        //     where: {
+        //         username: "",
+        //     },
+        // });
+        // const uniqUsers1 = await client.users.findUnique({
+        //     where: {
+        //         id: 1,
+        //     },
+        // });
+        // res.status(200).json({ ok: true });
     }
-    if (req.method === "POST") {
-        //Create
-        res.json({ ok: true });
-    }
-    if (req.method === "PUT") {
-        //Update
-        res.json({ ok: true });
-    }
-    if (req.method === "DELETE") {
-        //Delete
-        res.json({ ok: true });
-    }
+    // if (req.method === "POST") {
+    //     //Create
+    //     res.json({ ok: true });
+    // }
+    // if (req.method === "PUT") {
+    //     //Update
+    //     res.json({ ok: true });
+    // }
+    // if (req.method === "DELETE") {
+    //     //Delete
+    //     res.json({ ok: true });
+    // }
 }

@@ -9,8 +9,8 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
-  url      = env("MY_DATABASE_URL")
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
 
 model users {
@@ -32,7 +32,6 @@ model users {
 model boards {
   id    Int     @id @default(autoincrement())
   title String?
-  password  String?
   description  String?
   mod_date  String?
   reg_date  String?
