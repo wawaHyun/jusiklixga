@@ -10,6 +10,8 @@ import { useRouter } from "next/navigation";
 import { PG } from "@/app/component/common/enums/PG";
 import { getAllBoards } from "@/app/component/boards/service/board.slice";
 import { fetchAllBoards } from "@/app/component/boards/service/board.service";
+import { IArticletype } from "@/app/api/article/model/articel-model";
+import { FindSingleArticle } from "@/app/api/article/route";
 
 export default function ArticleDetailPage({ params }: any) {
   const dispatch = useDispatch()
@@ -31,10 +33,11 @@ export default function ArticleDetailPage({ params }: any) {
       })
   }
 
+
   useEffect(() => {
     dispatch(fetchAllBoards(1))
     dispatch(findArticleById(params.id))
-  }, [dispatch,params])
+  }, [])
 
   return (
     <form className="max-w mx-auto" onSubmit={handleSubmit(onSubmit)}>

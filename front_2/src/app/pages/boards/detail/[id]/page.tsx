@@ -49,5 +49,7 @@ export default function BoardDetailPage({ params }: any) {
     {MyTypography(<button type="button" onClick={handleModify} > 수정</button>, "1.5rem")}
     {MyTypography(<button type="button" onClick={handleDelete} > 삭제</button>, "1.5rem")}
 
+
+
   </>)
 }

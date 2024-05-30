@@ -1,9 +1,9 @@
-import  instance  from '@/app/component/common/configs/axios-config'
+import  {instance}  from '@/app/component/common/configs/axios-config'
 
 export const AllBoardsAPI = async (page: number) => {
     try {
         const response = await instance().get('/api/boards/list', {
-            params: { page, limit: 10 } //1page 당 10 게시글
+            params: { page, limit: 10 } 
         });
         return response.data
     } catch (error) {
@@ -22,7 +22,6 @@ export const findBoardsAPI = async (id: number) => {
         console.log(error, " findBoardsAPI EERR!!!")
         return error
     }
-
 }
 
 

@@ -9,7 +9,7 @@ import { HomeIcon } from "../icons/icons";
 
 export default function CardButton({ id, title, description, img }: IBoard) {
     return (
-        <div className="max-w-sm b-white border items-center border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div key={id} className="max-w-sm b-white border items-center border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             {/* <Link href={`${PG.ARTICLE}/mylist/${id}`}> */}
             <Link href={`${PG.ARTICLE}/mylist/${id}`}>
                 <div className="flex justify-center mt-5">

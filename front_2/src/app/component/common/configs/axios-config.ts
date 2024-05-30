@@ -13,8 +13,14 @@ import { parseCookies } from 'nookies';
 //     }
 // }
 
-export default function instance() {
+export  function instance() {
     const instance = axios.create({ baseURL: process.env.NEXT_PUBLIC_API_URL })
+setInterceptor(instance)
+return instance
+}
+
+export  function server() {
+    const instance = axios.create({ baseURL: process.env.SERVER })
 setInterceptor(instance)
 return instance
 }

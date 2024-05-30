@@ -5,15 +5,26 @@ import { MyTypography } from '../../common/style/cell';
 import { PG } from '../../common/enums/PG';
 import { deleteArticleById } from '../service/article.service';
 import { useDispatch } from 'react-redux';
+import PinkButton from '@/app/atoms/button/PinkButton';
+import { DeleteArticle } from '@/app/api/article/route';
+import { IArticletype } from '@/app/api/article/model/articel-model';
 
 export default function ArticleColumns(): GridColDef[] {
 
     const dispatch = useDispatch();
 
     interface CellType {
-        row: IArticle;
+        row: IArticletype;
     }
 
+    const deletePrisma = async (id: number) => {
+        try {
+            await DeleteArticle(id);
+        }
+        catch (error) {
+            console.log(error)
+        }
+    }
 
     return [
         {
@@ -31,7 +42,8 @@ export default function ArticleColumns(): GridColDef[] {
             field: 'title',
             headerName: 'TITLE',
             renderCell: ({ row }: CellType) =>
-                MyTypography(<Link href={`${PG.ARTICLE}/detail/${row.id}`}> {row.title} </Link> , "1.5rem")
+                // MyTypography(<Link href={`${PG.ARTICLE}/detail/${row.id}`}> {row.title} </Link>, "1.5rem")
+                MyTypography(<Link href={`${PG.ARTICLE}/detailPrisma/${row.id}`}> {row.title} </Link>, "1.5rem")
         },
         {
             flex: 0.04,
@@ -72,20 +84,22 @@ export default function ArticleColumns(): GridColDef[] {
             field: 'delete',
             headerName: 'DELETE',
             renderCell: ({ row }: CellType) =>
-                <button className="btn focus overflow-hidden relative w-full h-full bg-blue-500 text-white rounded-xl font-bold uppercase -- before:block before:absolute before:h-full before:w-1/2 before:rounded-full 
-            before:bg-pink-400 before:top-0 before:left-1/4 before:transition-transform before:opacity-0 before:hover:opacity-100 hover:text-200 hover:before:animate-ping transition-all duration-300"
-                    onClick={() => {
-                        let flag = confirm("article을 삭제하시겠습니까?")
-                        if(flag){
-                            console.log("delete article id : {}", row.id)
-                            dispatch(deleteArticleById(row.id))
+                <PinkButton text="DLELCTE" path={
+                    () => {
+                        const id = row.id != undefined ? row.id :0
+ 
+                        let flag = confirm(id + "번째 article을 삭제하시겠습니까?")
+                        if (flag) {
+                            console.log("delete article id : {}", id)
+                            // dispatch(deleteArticleById(id))
+                            deletePrisma(id);
                             location.reload();
-                        }else{  
+                        } else {
                             alert("article 삭제가 취소되었습니다.")
                         }
-                    }
-                    }> DELETE</button>
+                    }} />
         }
 
     ]
+
 }

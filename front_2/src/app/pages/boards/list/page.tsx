@@ -1,15 +1,12 @@
 'use client'
 
 import CardButton from "@/app/atoms/button/CardButton"
-import { CallIcon, ChartIcon, HomeIcon, ListIcon, NewsIcon } from "@/app/atoms/icons/icons";
-import { fetchAllBoards } from "@/app/component/boards/service/board.service";
-import { getAllBoards } from "@/app/component/boards/service/board.slice";
-import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { CallIcon, ChartIcon, ListIcon, NewsIcon } from "@/app/atoms/icons/icons";
+
+
 
 
 export default function Boardcards() {
-
 
     const allBoards = [
         { id: 1, title: "고객센터", description: "고객센터 게시판 목록으로 갑니다. ", img: <CallIcon /> },
@@ -34,8 +31,10 @@ export default function Boardcards() {
                 <CardButton key={elem.id} id={elem.id} title={elem.title}
                     description={elem.description} img={elem.img} />
             ))}
-
         </div>
+        <br />
 
+    
     </>)
 }
+

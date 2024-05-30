@@ -1,4 +1,5 @@
-import instance from "@/app/component/common/configs/axios-config"
+
+import { instance } from "../../common/configs/axios-config"
 import { IUser } from "../model/user.model"
 
 export const fetchAllUsersAPI = async (page: number) => {

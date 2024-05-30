@@ -1,22 +1,17 @@
 generator client {
   provider = "prisma-client-js"
-  previewFeatures = ["referentialIntegrity"]
+  previewFeatures = ["extendedWhereUnique"]
 }
 
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
-  referentialIntegrity = "prisma"
 }
 
-// npx prisma migrate dev --name init
-
 model users {
-  // id                    Int     @id @default(autoincrement())
-  id                    String     @unique
-  username              String
-  password              String
-  name                  String?
+  username              String? @unique
+  password              String? @unique
+  name                  String? 
   phone                 String?
   address               String?
   age                   String?
@@ -24,25 +19,26 @@ model users {
   email                 String?
   investment_propensity String?
   mbti                  String?
+  token                 String? @unique
   mod_date              String?
   reg_date              String?
+  id                    Int     @id @default(autoincrement())
 }
 
 model boards {
-  id          String    @unique
-  title       String?
-  password    String?
+  title       String? @unique
   description String?
   mod_date    String?
   reg_date    String?
+  id          Int     @id @default(autoincrement())
 }
 
 model articles {
-  id        String     @unique
-  title     String?
+  title     String? @unique
   content   String?
   mod_date  String?
   reg_date  String?
-  board_id  String?
-  writer_id String?
+  board_id  String? @unique
+  writer_id String? @unique
+  id        Int     @id @default(autoincrement())
 }

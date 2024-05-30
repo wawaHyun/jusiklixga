@@ -47,7 +47,3 @@ export const logout:any = createAsyncThunk(
     'users/logout',
     async () => await logoutAPI()
 )
-
-// export const userlist:any = (
-//     async () => await handlerAPI()
-// )

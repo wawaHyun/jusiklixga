@@ -1,18 +1,14 @@
 'use client'
 
 import ArticleColumns from "@/app/component/articles/modul/columns";
-import {findCountArticle, fetchMylistArticles } from "@/app/component/articles/service/article.service";
-import { getAllArticles, getCountArticle } from "@/app/component/articles/service/article.slice";
-import { findBoardById } from "@/app/component/boards/service/board.service";
-import { getSingleBoard } from "@/app/component/boards/service/board.slice";
 import { PG } from "@/app/component/common/enums/PG";
-import { MyTypography } from "@/app/component/common/style/cell";
 import { DataGrid } from "@mui/x-data-grid";
 import { NextPage } from "next";
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import Image from 'next/image'
+import { useEffect, useState } from "react";
+import { IArticletype } from "@/app/api/article/model/articel-model";
+import { MyArticleList } from "@/app/api/article/route";
+import PinkButton from "@/app/atoms/button/PinkButton";
 
 
 
@@ -28,17 +24,26 @@ const cards = [
 
 
 const MylistArticlesPage: NextPage = ({ params }: any) => {
-    const dispatch = useDispatch()
-    const mylistArticles: [] = useSelector(getAllArticles)
-    const board: IBoard = useSelector(getSingleBoard)
+
+    const router = useRouter();
+
+    const [articleList, setArticleList] = useState<IArticletype[]>([])
+
+    const AllAriclelist = async () => {
+        try {
+            const response = await MyArticleList(params.id);
+            setArticleList(response)
+        }
+        catch (error) {
+            console.log(error)
+        }
+    }
 
 
     useEffect(() => {
-        dispatch(fetchMylistArticles(params.id))
-        dispatch(findBoardById(params.id))
-    }, [dispatch,params])
+        AllAriclelist()
+    }, [])
 
-    const router = useRouter(); 
 
     return (<>
 
@@ -47,28 +52,22 @@ const MylistArticlesPage: NextPage = ({ params }: any) => {
                 {cards.map((data, index) => {
                     return (
                         <section className="flex-shrink-0 w-full snap-center justify-center items-center" key={index}>
-                            <Image src={data} alt="Images to scroll horizontal2" width={800} height={800} className="w-full h-[500px]" />
+                            <img src={data} alt="Images to scroll horizontal2" width={800} height={800} className="w-full h-[500px]" />
                         </section>
                     );
                 })}
             </div>
         </div>
 
-
-        {MyTypography(board.title + ' length is ' + mylistArticles.length, "1.5rem")}
-
         <br />
-
-        <button className="btn overflow-hidden relative w-64 bg-blue-500 text-white py-4 px-4 rounded-xl font-bold uppercase -- before:block before:absolute before:h-full before:w-1/2 before:rounded-full 
-        before:bg-pink-400 before:top-0 before:left-1/4 before:transition-transform before:opacity-0 before:hover:opacity-100 hover:text-200 hover:before:animate-ping transition-all duration-300"
-            onClick={() => router.push(`${PG.ARTICLE}/save/${params.id}`)}>
-
-            <span className="relative">글쓰러가기</span>
-        </button>
+        <div className="w-screen text-center mb-5">
+            {/* <PinkButton text="글쓰러가기" path={()=>router.push(`${PG.ARTICLE}/save/${params.id}`)}/> */}
+            <PinkButton text="글쓰러가기" path={()=>router.push(`${PG.ARTICLE}/savePrisma/${params.id}`)}/>
+        </div>
 
         <div style={{ height: "100%", width: "100%", fontSize: 50 }}>
-            {mylistArticles && <DataGrid // 🔥 4
-                rows={mylistArticles}
+            {articleList && <DataGrid // 🔥 4
+                rows={articleList}
                 columns={ArticleColumns()}
                 initialState={{
                     pagination: {
@@ -80,14 +79,6 @@ const MylistArticlesPage: NextPage = ({ params }: any) => {
                 pageSizeOptions={[10, 20, 50]} // 4-1
                 checkboxSelection
             />}
-
-<button className="btn overflow-hidden relative w-64 bg-blue-500 text-white py-4 px-4 rounded-xl font-bold uppercase -- before:block before:absolute before:h-full before:w-1/2 before:rounded-full 
-        before:bg-pink-400 before:top-0 before:left-1/4 before:transition-transform before:opacity-0 before:hover:opacity-100 hover:text-200 hover:before:animate-ping transition-all duration-300"
-            onClick={() =>(
-                confirm("삭제하시겠습니까?")
-                // alert(checkboxSelection)
-                // dispatch(deleteArticleById(1))
-            )}> 삭제하기 </button>
         </div>
     </>)
 }

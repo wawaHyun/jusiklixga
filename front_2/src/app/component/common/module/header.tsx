@@ -42,8 +42,8 @@ function Header() {
     { id: 1, title: "home", icon: <HomeIcon />, address: ()=>router.push(`/`) },
     { id: 2, title: "news", icon: <NewsIcon />, address: ()=>router.push(`${PG.JUSIK}/news`)},
     { id: 3, title: "chart", icon: <ChartIcon />, address: ()=>router.push(`${PG.JUSIK}/chart`)},
-    { id: 4, title: "login", icon: <MailIcon />, address: ()=>router.push(`${PG.USER}/login`)},
-    { id: 5, title: "board", icon: <ListIcon />, address: ()=>router.push(`${PG.BOARD}/list`)},
+    { id: 4, title: "login", icon: <MailIcon />, address: ()=>router.push(`${PG.USER}/loginPrisma`)},
+    { id: 5, title: "board", icon: <ListIcon />, address: ()=>router.push(`${PG.BOARD}/listPrisma`)},
     { id: 6, title: "머하쥐", icon: <CallIcon />, address: ()=>router.push(`/`)},
   ]
 
