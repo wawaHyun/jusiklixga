@@ -70,7 +70,7 @@ export default function ArticleSave({ params }: any) {
         <input className="block mb-2 text-gray-900 dark:text-white" 
         type='hidden'value={jwtDecode<any>(parseCookies().accessToken).id} {...register('writer', { required: true })} readOnly/>
           {MyTypography(jwtDecode<any>(parseCookies().accessToken).username + '님의 Article 작성', '1.5rem')}
-        <label htmlFor="countries" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">good good goood</label>
+        <label htmlFor="countries" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
         <select defaultValue={params.id} {...register('board', { required: true })}   
           className="bg-gray-50 border  border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
          

@@ -60,9 +60,8 @@ const MylistArticlesPage: NextPage = ({ params }: any) => {
         </div>
 
         <br />
-        <div className="w-screen text-center mb-5">
-            {/* <PinkButton text="글쓰러가기" path={()=>router.push(`${PG.ARTICLE}/save/${params.id}`)}/> */}
-            <PinkButton text="글쓰러가기" path={()=>router.push(`${PG.ARTICLE}/savePrisma/${params.id}`)}/>
+        <div className="w-screen text-center mb-5 h-[50px] broder">
+            <PinkButton text="글쓰러가기" path={()=>router.push(`${PG.ARTICLE}/savePrisma`)}/>
         </div>
 
         <div style={{ height: "100%", width: "100%", fontSize: 50 }}>
@@ -75,6 +74,7 @@ const MylistArticlesPage: NextPage = ({ params }: any) => {
                             pageSize: 10,
                         },
                     },
+                
                 }}
                 pageSizeOptions={[10, 20, 50]} // 4-1
                 checkboxSelection

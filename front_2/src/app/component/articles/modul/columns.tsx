@@ -3,7 +3,6 @@ import { Link } from '@mui/material'
 import { GridColDef } from '@mui/x-data-grid'
 import { MyTypography } from '../../common/style/cell';
 import { PG } from '../../common/enums/PG';
-import { deleteArticleById } from '../service/article.service';
 import { useDispatch } from 'react-redux';
 import PinkButton from '@/app/atoms/button/PinkButton';
 import { DeleteArticle } from '@/app/api/article/route';
@@ -11,23 +10,22 @@ import { IArticletype } from '@/app/api/article/model/articel-model';
 
 export default function ArticleColumns(): GridColDef[] {
 
-    const dispatch = useDispatch();
-
     interface CellType {
         row: IArticletype;
     }
 
-    const deletePrisma = async (id: number) => {
-        try {
-            await DeleteArticle(id);
-        }
-        catch (error) {
-            console.log(error)
-        }
+    const deletee = async(id:number) => {
+            try {
+                await DeleteArticle(id);
+            }
+            catch (error) {
+                console.log(error)
+            }
     }
 
     return [
         {
+            headerAlign: 'center',
             flex: 0.04,
             minWidth: 30,
             sortable: false,
@@ -36,6 +34,7 @@ export default function ArticleColumns(): GridColDef[] {
             renderCell: ({ row }: CellType) => MyTypography(row.id, "1.5rem")
         },
         {
+            headerAlign: 'center',
             flex: 0.04,
             minWidth: 30,
             sortable: false,
@@ -43,9 +42,10 @@ export default function ArticleColumns(): GridColDef[] {
             headerName: 'TITLE',
             renderCell: ({ row }: CellType) =>
                 // MyTypography(<Link href={`${PG.ARTICLE}/detail/${row.id}`}> {row.title} </Link>, "1.5rem")
-                MyTypography(<Link href={`${PG.ARTICLE}/detailPrisma/${row.id}`}> {row.title} </Link>, "1.5rem")
+                MyTypography(<Link href={`${PG.ARTICLE}/update/${row.id}`}> {row.title} </Link>, "1.5rem")
         },
         {
+            headerAlign: 'center',
             flex: 0.04,
             minWidth: 30,
             sortable: false,
@@ -54,6 +54,7 @@ export default function ArticleColumns(): GridColDef[] {
             renderCell: ({ row }: CellType) => MyTypography(row.content, "1.5rem")
         },
         {
+            headerAlign: 'center',
             flex: 0.04,
             minWidth: 30,
             sortable: false,
@@ -62,22 +63,25 @@ export default function ArticleColumns(): GridColDef[] {
             renderCell: ({ row }: CellType) => MyTypography(row.writer, "1.5rem")
         },
         {
+            headerAlign: 'center',
             flex: 0.04,
             minWidth: 30,
             sortable: false,
             field: 'modDate',
-            headerName: 'mod date',
+            headerName: 'MOD DATE',
             renderCell: ({ row }: CellType) => MyTypography(row.modDate, "1.5rem")
         },
         {
+            headerAlign: 'center',
             flex: 0.04,
             minWidth: 30,
             sortable: false,
             field: 'regDate',
-            headerName: 'reg date',
+            headerName: 'REG DATE',
             renderCell: ({ row }: CellType) => MyTypography(row.regDate, "1.5rem")
         },
         {
+            headerAlign: 'center',
             flex: 0.04,
             minWidth: 30,
             sortable: false,
@@ -86,13 +90,13 @@ export default function ArticleColumns(): GridColDef[] {
             renderCell: ({ row }: CellType) =>
                 <PinkButton text="DLELCTE" path={
                     () => {
-                        const id = row.id != undefined ? row.id :0
- 
+                        const id = row.id != undefined ? row.id : 0
+
                         let flag = confirm(id + "번째 article을 삭제하시겠습니까?")
                         if (flag) {
                             console.log("delete article id : {}", id)
                             // dispatch(deleteArticleById(id))
-                            deletePrisma(id);
+                            deletee(id)
                             location.reload();
                         } else {
                             alert("article 삭제가 취소되었습니다.")

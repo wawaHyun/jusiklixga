@@ -81,13 +81,12 @@ export default function Boardcards() {
                 <div key={elem.id} className="w-screen text-center mb-5">
                     <CardButton key={elem.id} id={elem.id} title={elem.title || undefined}
                         description={elem.description || undefined} img={<ListIcon />} />
-                    <div>
+                    {/* <div>
                         {MyTypography(<input type="radio" name="id" defaultValue={elem.id} onChange={handleInput} />, "1.5rem")}
-
                         {MyTypography(<input className="border" type="text" name="title" defaultValue={'' + elem.title} onChange={handleInput} />, "1.5rem")}
                         {MyTypography(<input className="border" type="text" name="description" defaultValue={'' + elem.description} onChange={handleInput} />, "1.5rem")}
                         <MoveButton text="수정하기" path={() => handleUpdate(inputValue)} />
-                    </div>
+                    </div> */}
                 </div>
             ))}
         </div>
