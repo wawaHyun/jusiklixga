@@ -6,20 +6,6 @@ import {CategoryScale} from 'chart.js';
 Chart.register(CategoryScale);
 
 
-const npsdata = async ()=>{
-  try{
-  const response = await AllNps()
-  return response
-  }catch(error){
-    console.log("npsdata : "+error)
-  }
-}
-
-useEffect({
-  npsdata()
-  .then((res)=>{
-
-},[])
 const data = {
 
   datasets: [
@@ -167,6 +153,34 @@ const options = {
 };
 
 export default function NpsBarchart () {
+
+  const npsdata = async ()=>{
+    try{
+const response = await AllNps()
+    return response
+    }catch(error){
+      console.log("npsdata : "+error)
+    }
+  }
+
+  const userExistt = async () => {
+    try {
+        const response = await ExistUser(userinfo.username + '')
+        // console.log("userExistt : " + JSON.stringify(response))
+        return response
+    } catch (error) {
+        console.log("userExistt error : " + error)
+    }
+}
+
+  useEffect(()=>{
+    npsdata()
+    .then((res)=>{
+      set
+    })
+  
+  },[])
+
   return (
     <Container>
       <Line type="line" data={data} options={options} />

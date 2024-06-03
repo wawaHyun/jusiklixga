@@ -3,28 +3,27 @@ spring:
     name: api
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://101.79.8.41:3307/turingdb?useSSL=false
+    url: jdbc:mysql://101.79.8.41:3307/turingdb
     username: root
     password: root
   sql:
     init:
       platform: mysql
       mode: always
+      encoding: utf-8
   jpa:
     defer-datasource-initialization: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
         jdbc:
           lob:
-            '[non_contextual_creation]': true
-        '[format_sql]': true
+            "[non_contextual_creation]": true
+        "[format_sql]": true
     show-sql: true
-#    open-in-view: true
-server:
-  port: 8081
+  #  open-in-view: true
 logging:
   level:
     org:
@@ -35,13 +34,5 @@ jwt:
   iss: turing.co.kr
   exp: 24*60*60*1000
   secret: turingturingturingturingturingturingturingturingturing
-
-# springdoc:
-#   packages-to-scan: com.colabear754.springdoc_example.controllers
-#   default-consumes-media-type: application/json;charset=UTF-8
-#   default-produces-media-type: application/json;charset=UTF-8
-#   swagger-ui:
-#     path: /
-#     disable-swagger-default-url: true
-#     display-request-duration: true
-#     operations-sorter: alpha
+server:
+  port: 8081

@@ -1,0 +1,32 @@
+version: "3"
+services:
+  database:
+    container_name: soccer-container
+    image: mysql:latest
+    environment:
+      - MYSQL_DATABASE=turingdb
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_ROOT_HOST=%
+    command: ['--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
+    restart: always
+    ports:
+      - "3307:3306"
+
+#    networks:
+#      - test_env
+#  application:
+#    container_name: soccer-application-container
+#    build: .
+#    environment:
+#      SPRING_DATASOURCE_URL: jdbc:mysql://soccer-container:3306/turingdb
+#      SPRING_DATASOURCE_USERNAME: root
+#      SPRING_DATASOURCE_PASSWORD: password
+#    ports:
+#      - "8080:8080"
+#    depends_on:
+#      - database
+#    networks:
+#      - test_env
+#networks:
+#  test_env:
+#    driver: bridge
