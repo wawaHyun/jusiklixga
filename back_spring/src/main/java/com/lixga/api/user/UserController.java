@@ -1,7 +1,7 @@
 package com.lixga.api.user;
 
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.responses.ApiResponses;
+// import io.swagger.v3.oas.annotations.responses.ApiResponse;
+// import io.swagger.v3.oas.annotations.responses.ApiResponses;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -15,9 +15,9 @@ import com.lixga.api.common.component.Messenger;
 import com.lixga.api.user.model.UserDto;
 import com.lixga.api.user.service.UserService;
 
-@ApiResponses(value = {
-        @ApiResponse(responseCode = "400", description = "Invalid ID supplied"),
-        @ApiResponse(responseCode = "404", description = "Customer not found") })
+// @ApiResponses(value = {
+//         @ApiResponse(responseCode = "400", description = "Invalid ID supplied"),
+//         @ApiResponse(responseCode = "404", description = "Customer not found") })
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @RequiredArgsConstructor

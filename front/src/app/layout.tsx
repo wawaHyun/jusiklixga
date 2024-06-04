@@ -8,6 +8,7 @@ import Header from "./component/common/module/header";
 import { useEffect, useState } from "react";
 import { getAuth } from "./component/users/service/user.slice";
 import { useSelector } from "react-redux";
+import Footer from "./component/common/module/footer";
 
 const ReduxProvider = dynamic(() => import("@/redux/redux-provider"), {
   ssr: false
@@ -24,12 +25,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="mt-200">
+        <div className="mt-200 border">
           <ReduxProvider>
-            {parseCookies().message === 'SUCCESS' &&<Header />}
+            {parseCookies().message === 'SUCCESS' && <Header />}
             {children}
           </ReduxProvider>
         </div>
+
+
       </body>
     </html>
   );

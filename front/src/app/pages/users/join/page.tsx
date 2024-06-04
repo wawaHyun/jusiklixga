@@ -8,6 +8,7 @@ import { useDispatch } from "react-redux";
 import { joinUser } from "@/app/component/users/service/user.service";
 import { useSelector } from "react-redux";
 import { getSingleUser } from "@/app/component/users/service/user.slice";
+import { PG } from "@/app/component/common/enums/PG";
 
 export default function Join() {
 
@@ -33,9 +34,9 @@ export default function Join() {
 
 
   useEffect(() => {
-    // if (join === 'SUCCESS') {
-    //   router.push(`/`)
-    // }
+    if (join === 'SUCCESS') {
+      router.push(`${PG.JUSIK}chart`)
+    }
   }, [])
 
 

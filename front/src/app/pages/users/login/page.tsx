@@ -202,7 +202,7 @@ const Login: NextPage = () => {
                                 className="text-xs text-gray-500 capitalize text-center w-full"
                             >
                                 Dont have any account yet?
-                                <span className="text-blue-700"> Sign Up</span>
+                                <span className="text-blue-700 text-sm"> Sign Up</span>
                             </Link>
                         </div>
                     </div>

@@ -2,16 +2,16 @@ spring:
   application:
     name: api
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/ggundb
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ggundb?useSSL=false
     username: root
     password: root
-    driver-class-name: com.mysql.cj.jdbc.Driver
   sql:
     init:
       platform: mysql
       mode: always
-
   jpa:
+    defer-datasource-initialization: true
     hibernate:
       ddl-auto: create
     properties:
@@ -19,9 +19,10 @@ spring:
         dialect: org.hibernate.dialect.MySQL8Dialect
         jdbc:
           lob:
-            "[non_contextual_creation]": true
-        "[format_sql]": true
+            '[non_contextual_creation]': true
+        '[format_sql]': true
     show-sql: true
+#    open-in-view: true
 logging:
   level:
     org:
@@ -29,6 +30,16 @@ logging:
         SQL: debug
         type: trace
 jwt:
-  iss: ggun.store
+  iss: turing.co.kr
   exp: 24*60*60*1000
-  secret: ggunggunggunggunggunggunggunggunggunggunggunggunggunggunggunggun
+  secret: turingturingturingturingturingturingturingturingturing
+
+# springdoc:
+#   packages-to-scan: com.colabear754.springdoc_example.controllers
+#   default-consumes-media-type: application/json;charset=UTF-8
+#   default-produces-media-type: application/json;charset=UTF-8
+#   swagger-ui:
+#     path: /
+#     disable-swagger-default-url: true
+#     display-request-duration: true
+#     operations-sorter: alpha
