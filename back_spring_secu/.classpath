@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="build/resources/test" path="src/test/resources">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+			<attribute name="resource" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="build/classes/java/test" path="src/test/java">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="build/resources/main" path="src/main/resources">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+			<attribute name="resource" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="build/classes/java/main" path="src/main/java">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="build/classes/java/test" path="build/generated/sources/annotationProcessor/java/test">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="build/classes/java/main" path="build/generated/sources/annotationProcessor/java/main">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/6.1.8/1461405dc325c82a0a058df033bee3d8c6dd6e41/spring-web-6.1.8.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/6.1.8/c2022cfd465957927d0752e66c6e9a7c7d00d6f6/spring-web-6.1.8-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/6.3.0/5775b401f2764e72bc8a47300a940b2d1e4ea719/spring-security-core-6.3.0.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/6.3.0/185d17748da8c77f98920f8cc0c080321723f127/spring-security-core-6.3.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-to-slf4j/2.23.1/425ad1eb8a39904d2830e907a324e956fb456520/log4j-to-slf4j-2.23.1.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-to-slf4j/2.23.1/e2cf080046879ae0e2d79b7c08fea21e64620a8/log4j-to-slf4j-2.23.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-socks/4.1.110.Final/4d54c8d5b95b14756043efb59b8c3e62ec67aa43/netty-codec-socks-4.1.110.Final.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-socks/4.1.110.Final/7de2eaf2eba065618f44425c5138b70805e6165a/netty-codec-socks-4.1.110.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/2.2/3af797a25458550a16bf89acc8e4ab2b7f2bfce0/snakeyaml-2.2.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/2.2/575a7915b847393207642575c139177ac2b2ac23/snakeyaml-2.2-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver-dns-native-macos/4.1.110.Final/6376510bb8a8c755a1f0af1d27c2902a1c84f58c/netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/3.3.0/79a400c9d7ce3a7cecf296fda402e3100a099bce/spring-boot-starter-logging-3.3.0.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/3.3.0/dc2d9d122a06e2437831dc349572994306e859c/spring-boot-starter-logging-3.3.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.projectreactor.netty/reactor-netty-core/1.1.19/639e2c63ade6f2a49d7e501ca2264b74d240b448/reactor-netty-core-1.1.19.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.projectreactor.netty/reactor-netty-core/1.1.19/b15b074e30744de920d8a73078739b954ef1da5b/reactor-netty-core-1.1.19-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.17.1/76b495194c36058904c82e288d285a1bd13f0ffa/jackson-datatype-jdk8-2.17.1.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.17.1/27c21be7d00465170851a724fffaa49fe865c10f/jackson-datatype-jdk8-2.17.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.110.Final/168db749c22652ee7fed1ebf7ec46ce856d75e51/netty-handler-4.1.110.Final.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.110.Final/91f6a27a66ed30c0552c998f5dc2a2e13e65d4fe/netty-handler-4.1.110.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/6.3.0/51f6d9efa687095543086735578f34241200bf83/spring-security-config-6.3.0.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/6.3.0/f92e367fc37610488c6937ca3a26d7060b39dea6/spring-security-config-6.3.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.110.Final/ec361e7e025c029be50c55c8480080cabcbc01e7/netty-common-4.1.110.Final.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.110.Final/db8c6430f28f1a12916b67c081e2071a9f3a0c84/netty-common-4.1.110.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.23.1/9c15c29c526d9c6783049c0a77722693c66706e1/log4j-api-2.23.1.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.23.1/b504efc545603fa3364ae397fe733cb9f527e67e/log4j-api-2.23.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/6.1.8/a545266a6efac9283353a922783a0a06f197ec0/spring-jcl-6.1.8.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/6.1.8/dfc56bce21f4c20aa6cdb9a0fd5819f2b2622517/spring-jcl-6.1.8-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-security/3.3.0/2d20fb8d3b186343c689a16bd26798cb32309c8/spring-boot-starter-security-3.3.0.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-security/3.3.0/be8c362738d63c5107497ddd49e805410072b46e/spring-boot-starter-security-3.3.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/2.0.13/a3bcd9d9dd50c71ce69f06b1fd05e40fdeff6ba5/jul-to-slf4j-2.0.13.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/2.0.13/91b642c6dead52faad3a6b762607d896e143a6e3/jul-to-slf4j-2.0.13-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.110.Final/f1fa43b03e93ab88e805b6a4e3e83780c80b47d2/netty-codec-4.1.110.Final.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.110.Final/260948f89f44320790a0bf8ceaba3c660d2e9708/netty-codec-4.1.110.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/3.3.0/1d98cfa94223e6a3a0e0ad301822cef90cc04fbc/spring-boot-autoconfigure-3.3.0.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/3.3.0/f49a2df10290521fb08e6fcce3ecde52d91f4480/spring-boot-autoconfigure-3.3.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/2.1.1/48b9bda22b091b1f48b13af03fe36db3be6e1ae3/jakarta.annotation-api-2.1.1.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/2.1.1/3beea3ed2e687d9bd8a78c00e18951fffccefe90/jakarta.annotation-api-2.1.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/2.0.13/80229737f704b121a318bba5d5deacbcf395bc77/slf4j-api-2.0.13.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/2.0.13/e7a3edf3c9b41ce9d4daeee609fc59cb2730f67f/slf4j-api-2.0.13-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.4/3864a1320d97d7b045f729a326e1e077661f31b7/reactive-streams-1.0.4.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.4/d3cddd3497e618c6d3810ef439f13666f889abe4/reactive-streams-1.0.4-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-dns/4.1.110.Final/381c5bf8b7570c163fa7893a26d02b7ac36ff6eb/netty-codec-dns-4.1.110.Final.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-dns/4.1.110.Final/b375649f0f1f6de72b836888a788a07e83d33094/netty-codec-dns-4.1.110.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.110.Final/66c15921104cda0159b34e316541bc765dfaf3c0/netty-resolver-4.1.110.Final.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.110.Final/a1d4e58416aa3dbe85d8df368a74f72e23a41cb4/netty-resolver-4.1.110.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/6.3.0/dfdec2d22d6dff861af9e17e0893e3edc742694a/spring-security-web-6.3.0.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/6.3.0/8ce6df1a87034a79f73157c725dddacf9550f7a0/spring-security-web-6.3.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/3.3.0/1af929e0fcb10c2bfc3f3619f4ca9049bd927b/spring-boot-starter-3.3.0.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/3.3.0/cee8d54da5cf83b3f5546199d063910d9c3f7489/spring-boot-starter-3.3.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/3.3.0/83d42f81f312d71b9425f58d1d3f9e8970e51b22/spring-boot-3.3.0.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/3.3.0/ef619836aa39be3ebda629250a0cca04a5087e6c/spring-boot-3.3.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/6.1.8/79a5e45383542ff514b5328fe277410cf4054f3b/spring-beans-6.1.8.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/6.1.8/6b0c65bb443e810e49dff5d473f73f513b96c519/spring-beans-6.1.8-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-classes-epoll/4.1.110.Final/3ca1cff0bf82bfd38e89f6946e54f24cbb3424a2/netty-transport-classes-epoll-4.1.110.Final.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-classes-epoll/4.1.110.Final/130899b3311cd6c6be499aff1fe2a615169475/netty-transport-classes-epoll-4.1.110.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.1.110.Final/72b74a82d22e215d1f2573c040078e0afff519af/netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.1.110.Final/fbe295d35deeb7cd1a3b08210c55af1c75785e94/netty-transport-native-epoll-4.1.110.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/3.3.0/1c9938093b372602f121e2b073f490897388cc71/spring-boot-starter-json-3.3.0.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/3.3.0/8cf4633554b3885c5b7729f9c9388199cd7f0e14/spring-boot-starter-json-3.3.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.110.Final/b91f04c39ac14d6a29d07184ef305953ee6e0348/netty-transport-4.1.110.Final.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.110.Final/376e9971c09f3684b74738975d592a025b60fc3/netty-transport-4.1.110.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webflux/6.1.8/c6ea164e2cf0733a0c2ef5d3aea5f455b96104/spring-webflux-6.1.8.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webflux/6.1.8/ff29cb2422af2fc0ff45bf59fdb90697734afd9a/spring-webflux-6.1.8-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.17.1/524dcbcccdde7d45a679dfc333e4763feb09079/jackson-databind-2.17.1.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.17.1/c156623726186b3bbc956d84c3d5f07198cd32f5/jackson-databind-2.17.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.5.6/afc75d260d838a3bddfb8f207c2805ed7d1b34f9/logback-classic-1.5.6.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.5.6/f476c6c116cd4702a0df07ab4f217f1d02bb2ed9/logback-classic-1.5.6-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.micrometer/micrometer-observation/1.13.0/5aa75fbb4367dc3b28e557d14535d21335dc8985/micrometer-observation-1.13.0.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.micrometer/micrometer-observation/1.13.0/56eebb73c2516b23309320029b2727998027be48/micrometer-observation-1.13.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler-proxy/4.1.110.Final/b7fb401dd47c79e6b99f2319ac3b561c50c31c30/netty-handler-proxy-4.1.110.Final.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler-proxy/4.1.110.Final/e1deed730ab2e2a9e726c701df0b7e5da19f4c0c/netty-handler-proxy-4.1.110.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver-dns-classes-macos/4.1.110.Final/4be9633daf46657dd94851ce44adaea14a2faa7e/netty-resolver-dns-classes-macos-4.1.110.Final.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver-dns-classes-macos/4.1.110.Final/83b990c2a5e7d1adaeabc2a1339d24dc7d052ccb/netty-resolver-dns-classes-macos-4.1.110.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver-dns/4.1.110.Final/3e687cdc4ecdbbad07508a11b715bdf95fa20939/netty-resolver-dns-4.1.110.Final.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver-dns/4.1.110.Final/2a7a80bba25528c3254134cadbe70f0442015ae8/netty-resolver-dns-4.1.110.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.17.1/74a998f6fbcedbddedf0a27e8ce72078b2e516a6/jackson-module-parameter-names-2.17.1.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.17.1/b456568115479a7773a87a1a0f006da7710724e8/jackson-module-parameter-names-2.17.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-crypto/6.3.0/78f15b86c791fc7af446cec84ccd941e2eee32cb/spring-security-crypto-6.3.0.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-crypto/6.3.0/7735dac530107cea2037afb155a91b1a19a47b45/spring-security-crypto-6.3.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.5.6/41cbe874701200c5624c19e0ab50d1b88dfcc77d/logback-core-1.5.6.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.5.6/ce8134214167faea5ec69cd294c994efe731ef8e/logback-core-1.5.6-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/6.1.8/dcf78ef442c24f32ff8c6a9746e7f5209b330111/spring-expression-6.1.8.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/6.1.8/3fa2ab61cde4971a6affa4eab79cb28ebb8677ab/spring-expression-6.1.8-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-webflux/3.3.0/7266190070229ddc77574f82d2304ca6e1a953d/spring-boot-starter-webflux-3.3.0.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-webflux/3.3.0/99fadd057ac31bf1a3cdc5c94c4a811ee100813/spring-boot-starter-webflux-3.3.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-reactor-netty/3.3.0/f1fb44cde3e36b86c05e5bfb435ca6c5584c38a5/spring-boot-starter-reactor-netty-3.3.0.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-reactor-netty/3.3.0/ea1e926716cd8ad71bedeb5afe03cc8533f32fae/spring-boot-starter-reactor-netty-3.3.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.17.1/5e52a11644cd59a28ef79f02bddc2cc3bab45edb/jackson-core-2.17.1.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.17.1/11be4ea2b39d9b8e844e05fecdc621552aeeb136/jackson-core-2.17.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/6.1.8/21219a0df58e5b96ef489a172b449232573352e8/spring-context-6.1.8.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/6.1.8/2d292802cb994f0c4a0b5b2b23f6b6baafafd53d/spring-context-6.1.8-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.6.6/b337a57753cf1bf653a7eb1083c1117c449a353b/reactor-core-3.6.6.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.6.6/9f27872ead7baa589969756352a503dde6133933/reactor-core-3.6.6-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http/4.1.110.Final/9d05cd927209ea25bbf342962c00b8e5a828c2a4/netty-codec-http-4.1.110.Final.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http/4.1.110.Final/57c54586881131c4b68784731847327a80cf0e68/netty-codec-http-4.1.110.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.projectreactor.netty/reactor-netty-http/1.1.19/b4bbb1aeb64ecb2b3949c38983032a7f0b0ebd07/reactor-netty-http-1.1.19.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.projectreactor.netty/reactor-netty-http/1.1.19/2270edeb94556f94db7903d9ed7cf3979553be5d/reactor-netty-http-1.1.19-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.110.Final/3d918a9ee057d995c362902b54634fc307132aac/netty-buffer-4.1.110.Final.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.110.Final/4c8f734f43112bd731911a4c19fcab97875d2073/netty-buffer-4.1.110.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.1.110.Final/a7096e7c0a25a983647909d7513f5d4943d589c0/netty-transport-native-unix-common-4.1.110.Final.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.1.110.Final/cd3c51ca482ed539e0b49f6ffb207a6dc73246d4/netty-transport-native-unix-common-4.1.110.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.17.1/969b0c3cb8c75d759e9a6c585c44c9b9f3a4f75/jackson-datatype-jsr310-2.17.1.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.17.1/7c87cd905ea9808786b58af75955614b0be59212/jackson-datatype-jsr310-2.17.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http2/4.1.110.Final/e0849843eb5b1c036b12551baca98a9f7ff847a0/netty-codec-http2-4.1.110.Final.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http2/4.1.110.Final/7afe00a78f6fe1431c4bfb02e489cf6644214166/netty-codec-http2-4.1.110.Final-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/6.1.8/ef793a21e405a88d9d32b92cb459c845ee12b271/spring-aop-6.1.8.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/6.1.8/3e664683b45571b34f64feccc22c1cb23d3579a/spring-aop-6.1.8-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/6.1.8/141fc11a5dbaa503fe361150312ad0fa9d9c03da/spring-core-6.1.8.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/6.1.8/c91e769bf44db913f3b03e0184ed69baa4bf305b/spring-core-6.1.8-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.17.1/fca7ef6192c9ad05d07bc50da991bf937a84af3a/jackson-annotations-2.17.1.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.17.1/45aa112e8b36bb3649a5be4179cb2ba9eea98bee/jackson-annotations-2.17.1-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.micrometer/micrometer-commons/1.13.0/156a59aff8d72c5e631eb4a2d739373ed5881609/micrometer-commons-1.13.0.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.micrometer/micrometer-commons/1.13.0/9e3dd64d7811ed766977f37572b2960cc869e46c/micrometer-commons-1.13.0-sources.jar">
+		<attributes>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/net.minidev/accessors-smart/2.5.1/19b820261eb2e7de7d5bde11d1c06e4501dd7e5f/accessors-smart-2.5.1.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/net.minidev/accessors-smart/2.5.1/1301d502f3d849f1966e56acdc446436dab8b504/accessors-smart-2.5.1-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/3.3.0/1e5451c5f21caa7c9ec8dcc1ec81513983c17098/spring-boot-test-autoconfigure-3.3.0.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/3.3.0/a7e357430bee3edc50447cacdc73205fc6f5302f/spring-boot-test-autoconfigure-3.3.0-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.5.1/4c11d2808d009132dfbbf947ebf37de6bf266c8e/json-smart-2.5.1.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.5.1/45abd4dda57f72e56d16aefc4d895a311afd751b/json-smart-2.5.1-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.2/a231e0d844d2721b0fa1b238006d15c6ded6842a/apiguardian-api-1.1.2.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.2/e0787a997746ac32639e0bf3cb27af8dce8a3428/apiguardian-api-1.1.2-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-test/3.3.0/7e8530fb86a9354d3ef8e5efece6e75899f0cdc8/spring-boot-starter-test-3.3.0.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-test/3.3.0/2f8fda5fabdeb7128700b4a6a8602dd7dec8b4e8/spring-boot-starter-test-3.3.0-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.10.2/3197154a1f0c88da46c47a9ca27611ac7ec5d797/junit-platform-commons-1.10.2.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.10.2/513097c1d045c39db2fa42a54f830d4358936dc3/junit-platform-commons-1.10.2-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/5.10.2/831c0b86ddc2ce38391c5b81ea662b0cfdc02cce/junit-jupiter-5.10.2.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/5.10.2/4e79ee610aff59d79b5f229252ded392b7d48fd1/junit-jupiter-5.10.2-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.25.3/792b270e73aa1cfc28fa135be0b95e69ea451432/assertj-core-3.25.3.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.25.3/227e1a8a29851120c8fcfecf5f329135a0311308/assertj-core-3.25.3-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.6/aa205cf0a06dbd8e04ece91c0b37c3f5d567546a/asm-9.6.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.6/d55087ece3c6a82ef0d6acb9d853886d7af9445d/asm-9.6-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.16/4a451ee6484abac3a498df0f3b33ed00a6fced4d/byte-buddy-agent-1.14.16.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.16/3b795529814119cb67acc553b5c3ed75575cb104/byte-buddy-agent-1.14.16-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest/2.2/1820c0968dba3a11a1b30669bb1f01978a91dedc/hamcrest-2.2.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest/2.2/a0a13cfc629420efb587d954f982c4c6a100da25/hamcrest-2.2-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-launcher/1.10.2/8125dd29e847ca274dd1a7a9ca54859acc284cb3/junit-platform-launcher-1.10.2.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-launcher/1.10.2/cab5a912975af7dc5d195970f8f1ca27f5caf35a/junit-platform-launcher-1.10.2-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.10.2/fb55d6e2bce173f35fd28422e7975539621055ef/junit-jupiter-api-5.10.2.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.10.2/b281dbb5921ce56b37b6e07a2502f663ca6c8db6/junit-jupiter-api-5.10.2-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/6.1.8/72839d29b5c60e1ce9b720abd6a8c396e5b265b2/spring-test-6.1.8.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/6.1.8/dd098c3cfd8dc29f818f366fc9eeff5c796ac637/spring-test-6.1.8-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/jakarta.activation/jakarta.activation-api/2.1.3/fa165bd70cda600368eee31555222776a46b881f/jakarta.activation-api-2.1.3.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/jakarta.activation/jakarta.activation-api/2.1.3/b65beccd47ff05cf3f46e810d9eebed8d63a3793/jakarta.activation-api-2.1.3-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/3.3/1049c09f1de4331e8193e579448d0916d75b7631/objenesis-3.3.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/3.3/5fef34eeee6816b0ba2170755a8a9db7744990c3/objenesis-3.3-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.xmlunit/xmlunit-core/2.9.1/e5833662d9a1279a37da3ef6f62a1da29fcd68c4/xmlunit-core-2.9.1.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.xmlunit/xmlunit-core/2.9.1/8ef88e77c158cdc17de55ad94e1e7e7972a91bd6/xmlunit-core-2.9.1-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.10.2/f1f8fe97bd58e85569205f071274d459c2c4f8cd/junit-jupiter-engine-5.10.2.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.10.2/624f71a8d76185f2ac8d234c686bbdab0bd28ae0/junit-jupiter-engine-5.10.2-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-test/6.3.0/6b1cdf6b78c21fc63104f2c151f5a83a2d01cfa7/spring-security-test-6.3.0.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-test/6.3.0/35a04cc16cf3ef569a5ed0e8fef2445687cdc311/spring-security-test-6.3.0-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/5.11.0/e4069fa4f4ff2c94322cfec5f2e45341c6c70aff/mockito-core-5.11.0.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/5.11.0/e8cd357b9da47e69c96aadd398ff44dc1b44bb2e/mockito-core-5.11.0-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/4.0.2/6cd5a999b834b63238005b7144136379dc36cad2/jakarta.xml.bind-api-4.0.2.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/4.0.2/1e65720468e667565197d77e825ad883eb8aee1a/jakarta.xml.bind-api-4.0.2-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/5.11.0/8e658dd339f40305ed4293db25545b5df98b171b/mockito-junit-jupiter-5.11.0.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/5.11.0/f2541ac9fa097ce660fff3634263fb15fb4134f3/mockito-junit-jupiter-5.11.0-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test/3.3.0/75d7387692d786d957e064f52bd44c7e3e3c393d/spring-boot-test-3.3.0.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test/3.3.0/cac220bae7a42b608151ea4d6eca86faa9a4f1b7/spring-boot-test-3.3.0-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.3.0/152ea56b3a72f655d4fd677fc0ef2596c3dd5e6e/opentest4j-1.3.0.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.3.0/afb8ff23cffb021c56f333953aebfe6e8818568e/opentest4j-1.3.0-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.10.2/d53bb4e0ce7f211a498705783440614bfaf0df2e/junit-platform-engine-1.10.2.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.10.2/886c197f5fcfe9eaf0d1dde20aa1bd3abd653f44/junit-platform-engine-1.10.2-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-test/3.6.6/182e4bda682608b685901e471c2b6df36592e7b0/reactor-test-3.6.6.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-test/3.6.6/c416c1e4df657b495e5e914c06de9fb193d1c217/reactor-test-3.6.6-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.awaitility/awaitility/4.2.1/e56b600e0b184182ba5b2baccd2bab593a98a624/awaitility-4.2.1.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.awaitility/awaitility/4.2.1/83194882ebca87259801f529f8898ddd376fbb3d/awaitility-4.2.1-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.14.16/e1b9a06e131b7d5b183c8ccc7c29b9e5a8dba077/byte-buddy-1.14.16.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.14.16/718b9f53637ac360fb851785fc86244c60509f18/byte-buddy-1.14.16-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/com.jayway.jsonpath/json-path/2.9.0/37fe2217f577b0b68b18e62c4d17a8858ecf9b69/json-path-2.9.0.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/com.jayway.jsonpath/json-path/2.9.0/a1ae84a6b97263c7ea566dfa73d5ac2271743e44/json-path-2.9.0-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.10.2/359132c82a9d3fa87a325db6edd33b5fdc67a3d8/junit-jupiter-params-5.10.2.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.10.2/1add8e4310a408675f46eae8acafe6b2b72232e5/junit-jupiter-params-5.10.2-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/bf42d7e47a3228513b626dd7d37ac6f072aeca4f/android-json-0.0.20131108.vaadin1-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.skyscreamer/jsonassert/1.5.1/6d842d0faf4cf6725c509a5e5347d319ee0431c3/jsonassert-1.5.1.jar" sourcepath="C:/Users/bitcamp/.gradle/caches/modules-2/files-2.1/org.skyscreamer/jsonassert/1.5.1/56cfa73a7ab13fbb8d433570add90f087d40e243/jsonassert-1.5.1-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="gradle.buildServer" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
