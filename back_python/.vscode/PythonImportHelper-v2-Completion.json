@@ -1,0 +1,625 @@
+[
+    {
+        "label": "*",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "PrinterBase",
+        "importPath": "convert_abstract",
+        "description": "convert_abstract",
+        "isExtraImport": true,
+        "detail": "convert_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "ReaderBase",
+        "importPath": "convert_abstract",
+        "description": "convert_abstract",
+        "isExtraImport": true,
+        "detail": "convert_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "ScraperBase",
+        "importPath": "convert_abstract",
+        "description": "convert_abstract",
+        "isExtraImport": true,
+        "detail": "convert_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "EditorBase",
+        "importPath": "convert_abstract",
+        "description": "convert_abstract",
+        "isExtraImport": true,
+        "detail": "convert_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "PrinterBase",
+        "importPath": "convert_abstract",
+        "description": "convert_abstract",
+        "isExtraImport": true,
+        "detail": "convert_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "ReaderBase",
+        "importPath": "convert_abstract",
+        "description": "convert_abstract",
+        "isExtraImport": true,
+        "detail": "convert_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "ScraperBase",
+        "importPath": "convert_abstract",
+        "description": "convert_abstract",
+        "isExtraImport": true,
+        "detail": "convert_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "EditorBase",
+        "importPath": "convert_abstract",
+        "description": "convert_abstract",
+        "isExtraImport": true,
+        "detail": "convert_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "ic",
+        "importPath": "icecream",
+        "description": "icecream",
+        "isExtraImport": true,
+        "detail": "icecream",
+        "documentation": {}
+    },
+    {
+        "label": "ic",
+        "importPath": "icecream",
+        "description": "icecream",
+        "isExtraImport": true,
+        "detail": "icecream",
+        "documentation": {}
+    },
+    {
+        "label": "ic",
+        "importPath": "icecream",
+        "description": "icecream",
+        "isExtraImport": true,
+        "detail": "icecream",
+        "documentation": {}
+    },
+    {
+        "label": "ic",
+        "importPath": "icecream",
+        "description": "icecream",
+        "isExtraImport": true,
+        "detail": "icecream",
+        "documentation": {}
+    },
+    {
+        "label": "ic",
+        "importPath": "icecream",
+        "description": "icecream",
+        "isExtraImport": true,
+        "detail": "icecream",
+        "documentation": {}
+    },
+    {
+        "label": "googlemaps",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "googlemaps",
+        "description": "googlemaps",
+        "detail": "googlemaps",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "urlopen",
+        "importPath": "urllib.request",
+        "description": "urllib.request",
+        "isExtraImport": true,
+        "detail": "urllib.request",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "NewsDataset",
+        "importPath": "app.api.news.model.news_dataset",
+        "description": "app.api.news.model.news_dataset",
+        "isExtraImport": true,
+        "detail": "app.api.news.model.news_dataset",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "NewsService",
+        "importPath": "app.api.news.service.news_service",
+        "description": "app.api.news.service.news_service",
+        "isExtraImport": true,
+        "detail": "app.api.news.service.news_service",
+        "documentation": {}
+    },
+    {
+        "label": "NewsDataset",
+        "importPath": "news_dataset",
+        "description": "news_dataset",
+        "isExtraImport": true,
+        "detail": "news_dataset",
+        "documentation": {}
+    },
+    {
+        "label": "NewsDataset",
+        "importPath": "news_dataset",
+        "description": "news_dataset",
+        "isExtraImport": true,
+        "detail": "news_dataset",
+        "documentation": {}
+    },
+    {
+        "label": "ScrapBugs",
+        "importPath": "app.api.demo.crawling",
+        "description": "app.api.demo.crawling",
+        "isExtraImport": true,
+        "detail": "app.api.demo.crawling",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "importPath": "app.api.news.web.news_router",
+        "description": "app.api.news.web.news_router",
+        "isExtraImport": true,
+        "detail": "app.api.news.web.news_router",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "uvicorn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uvicorn",
+        "description": "uvicorn",
+        "detail": "uvicorn",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "importPath": "app.main_router",
+        "description": "app.main_router",
+        "isExtraImport": true,
+        "detail": "app.main_router",
+        "documentation": {}
+    },
+    {
+        "label": "EditorBase",
+        "kind": 6,
+        "importPath": "app.api.common.convert_abstract",
+        "description": "app.api.common.convert_abstract",
+        "peekOfCode": "class EditorBase(metaclass=ABCMeta):\n    @abstractmethod\n    def dropna(self,this:pd.DataFrame)->pd.DataFrame:\n        this = this.dropna()\n        return this\nclass PrinterBase(metaclass=ABCMeta):\n    @abstractmethod\n    def print(self):\n        pass\nclass ReaderBase(metaclass=ABCMeta):",
+        "detail": "app.api.common.convert_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "PrinterBase",
+        "kind": 6,
+        "importPath": "app.api.common.convert_abstract",
+        "description": "app.api.common.convert_abstract",
+        "peekOfCode": "class PrinterBase(metaclass=ABCMeta):\n    @abstractmethod\n    def print(self):\n        pass\nclass ReaderBase(metaclass=ABCMeta):\n    @abstractmethod\n    def csv(self):\n        pass\n    @abstractmethod\n    def excel(self):",
+        "detail": "app.api.common.convert_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "ReaderBase",
+        "kind": 6,
+        "importPath": "app.api.common.convert_abstract",
+        "description": "app.api.common.convert_abstract",
+        "peekOfCode": "class ReaderBase(metaclass=ABCMeta):\n    @abstractmethod\n    def csv(self):\n        pass\n    @abstractmethod\n    def excel(self):\n        pass\n    @abstractmethod\n    def json(self):\n        pass",
+        "detail": "app.api.common.convert_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "ScraperBase",
+        "kind": 6,
+        "importPath": "app.api.common.convert_abstract",
+        "description": "app.api.common.convert_abstract",
+        "peekOfCode": "class ScraperBase(metaclass=ABCMeta):\n    @abstractmethod\n    def driver(self):\n        pass",
+        "detail": "app.api.common.convert_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "Editor",
+        "kind": 6,
+        "importPath": "app.api.common.convert_util",
+        "description": "app.api.common.convert_util",
+        "peekOfCode": "class Editor(EditorBase):\n    def dropna(self,this:pd.DataFrame)->pd.DataFrame:\n        this.dropna(axis=0, inplace=True)\nclass Printer(PrinterBase):\n    def dframe(self, this:pd.DataFrame) -> None:\n        ic('*'*100)\n        ic(f'타입 : {type(this)}')\n        ic(f'column : {this.columns}')\n        ic(f'top 1 col : {this.head(1)}')\n        ic(f'null count : {this.isnul().sum()} 개')",
+        "detail": "app.api.common.convert_util",
+        "documentation": {}
+    },
+    {
+        "label": "Printer",
+        "kind": 6,
+        "importPath": "app.api.common.convert_util",
+        "description": "app.api.common.convert_util",
+        "peekOfCode": "class Printer(PrinterBase):\n    def dframe(self, this:pd.DataFrame) -> None:\n        ic('*'*100)\n        ic(f'타입 : {type(this)}')\n        ic(f'column : {this.columns}')\n        ic(f'top 1 col : {this.head(1)}')\n        ic(f'null count : {this.isnul().sum()} 개')\n        ic('*'*100)\nclass Reader(ReaderBase):\n    def __init__(self):",
+        "detail": "app.api.common.convert_util",
+        "documentation": {}
+    },
+    {
+        "label": "Reader",
+        "kind": 6,
+        "importPath": "app.api.common.convert_util",
+        "description": "app.api.common.convert_util",
+        "peekOfCode": "class Reader(ReaderBase):\n    def __init__(self):\n        pass\n    def csv(self,file) -> object:\n        return pd.read_csv(f'{file}',encoding='UTF-8', thousands=',')\n    def excel(self,file,header,usecols) -> object:\n        return pd.read_excel(f'{file}', header=header, usecols=usecols)\n    def json(self,file) -> object:\n        return json.load(open(f'{file}.json',encoding='UTF-8'))\n    def gmaps(self, api_key:str) -> object:",
+        "detail": "app.api.common.convert_util",
+        "documentation": {}
+    },
+    {
+        "label": "Scraper",
+        "kind": 6,
+        "importPath": "app.api.common.convert_util",
+        "description": "app.api.common.convert_util",
+        "peekOfCode": "class Scraper(ScraperBase):\n    def __init__(self):\n        pass\n    def driver(self, driver, url, selector, data) -> None:\n        return webdriver.Chrome('')\n    def auto_login(self, driver, url, selector, data) -> None:\n        driver.get(url)\n        driver.find_element_by_css_selector(selector).send_keys(data)\n        driver.find_element_by_css_selector(selector).submit()",
+        "detail": "app.api.common.convert_util",
+        "documentation": {}
+    },
+    {
+        "label": "ScrapBugs",
+        "kind": 6,
+        "importPath": "app.api.demo.crawling",
+        "description": "app.api.demo.crawling",
+        "peekOfCode": "class ScrapBugs(object):\n    def __init__(self) :\n        self.dname = 'C:\\\\Users\\\\bitcamp\\\\Gisa\\\\lixgit\\\\back_python\\\\app\\\\news\\\\data'\n    def scrap(self) -> {}:\n        print('벅스 뮤직 사이트에서 데이터를 수집합니다.')\n        url = 'https://music.bugs.co.kr/chart/track/realtime/total?'\n        html_doc = urlopen(url)\n        soup = BeautifulSoup(html_doc, 'lxml')\n        list1 = self.find_music(soup,'title')\n        list2 = self.find_music(soup,'artist')",
+        "detail": "app.api.demo.crawling",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.api.demo.crawling",
+        "description": "app.api.demo.crawling",
+        "peekOfCode": "router = APIRouter()\nclass ScrapBugs(object):\n    def __init__(self) :\n        self.dname = 'C:\\\\Users\\\\bitcamp\\\\Gisa\\\\lixgit\\\\back_python\\\\app\\\\news\\\\data'\n    def scrap(self) -> {}:\n        print('벅스 뮤직 사이트에서 데이터를 수집합니다.')\n        url = 'https://music.bugs.co.kr/chart/track/realtime/total?'\n        html_doc = urlopen(url)\n        soup = BeautifulSoup(html_doc, 'lxml')\n        list1 = self.find_music(soup,'title')",
+        "detail": "app.api.demo.crawling",
+        "documentation": {}
+    },
+    {
+        "label": "NewsDataset",
+        "kind": 6,
+        "importPath": "app.api.news.model.news_dataset",
+        "description": "app.api.news.model.news_dataset",
+        "peekOfCode": "class NewsDataset:\n    _dname : str = ''\n    _sname : str = ''\n    _fname : str = ''\n    _id : str = ''\n    _label : str = ''\n    _title : str = ''\n    _keyword : str = ''\n    @property\n    def dname(self) -> str : return self._dname",
+        "detail": "app.api.news.model.news_dataset",
+        "documentation": {}
+    },
+    {
+        "label": "NewsModel",
+        "kind": 6,
+        "importPath": "app.api.news.model.news_model",
+        "description": "app.api.news.model.news_model",
+        "peekOfCode": "class NewsModel:\n    def __init__(self) -> None:\n        self.ds = NewsDataset()\n        # this = self.ds\n    def new_dataframe_with_index(self, fname: pd.DataFrame) -> pd.DataFrame:\n        this = self.ds\n        return pd.read_csv(f'{this.dname}{fname}',index_col=0)    \n    def new_dataframe_no_index(self, fname: str) -> object:\n        this = self.ds\n        return pd.read_csv(f'{this.dname}{fname}')",
+        "detail": "app.api.news.model.news_model",
+        "documentation": {}
+    },
+    {
+        "label": "NewsService",
+        "kind": 6,
+        "importPath": "app.api.news.service.news_service",
+        "description": "app.api.news.service.news_service",
+        "peekOfCode": "class NewsService:\n    # dataset = NewsDataset()\n    def __init__(self) :\n        pass\n        # self.data = self.dataset\n    def preprocess(self) :\n        print(f'전처리 시작')\n    def title(self) :\n        ic(f'제목 추출 시작')\nif __name__ == '__main__':",
+        "detail": "app.api.news.service.news_service",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "kind": 6,
+        "importPath": "app.api.news.web.news_router",
+        "description": "app.api.news.web.news_router",
+        "peekOfCode": "class Request(BaseModel):\n    question :str\nclass Response(BaseModel):\n    answer :str\n@router.get(\"/title\")\ndef title(req:Request):\n    print(\"news title\")\n    service.title()\n    return {\"answer\": \"news~! \"}",
+        "detail": "app.api.news.web.news_router",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "kind": 6,
+        "importPath": "app.api.news.web.news_router",
+        "description": "app.api.news.web.news_router",
+        "peekOfCode": "class Response(BaseModel):\n    answer :str\n@router.get(\"/title\")\ndef title(req:Request):\n    print(\"news title\")\n    service.title()\n    return {\"answer\": \"news~! \"}",
+        "detail": "app.api.news.web.news_router",
+        "documentation": {}
+    },
+    {
+        "label": "title",
+        "kind": 2,
+        "importPath": "app.api.news.web.news_router",
+        "description": "app.api.news.web.news_router",
+        "peekOfCode": "def title(req:Request):\n    print(\"news title\")\n    service.title()\n    return {\"answer\": \"news~! \"}",
+        "detail": "app.api.news.web.news_router",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.api.news.web.news_router",
+        "description": "app.api.news.web.news_router",
+        "peekOfCode": "router = APIRouter()\nservice = NewsService()\nclass Request(BaseModel):\n    question :str\nclass Response(BaseModel):\n    answer :str\n@router.get(\"/title\")\ndef title(req:Request):\n    print(\"news title\")\n    service.title()",
+        "detail": "app.api.news.web.news_router",
+        "documentation": {}
+    },
+    {
+        "label": "service",
+        "kind": 5,
+        "importPath": "app.api.news.web.news_router",
+        "description": "app.api.news.web.news_router",
+        "peekOfCode": "service = NewsService()\nclass Request(BaseModel):\n    question :str\nclass Response(BaseModel):\n    answer :str\n@router.get(\"/title\")\ndef title(req:Request):\n    print(\"news title\")\n    service.title()\n    return {\"answer\": \"news~! \"}",
+        "detail": "app.api.news.web.news_router",
+        "documentation": {}
+    },
+    {
+        "label": "EditorBase",
+        "kind": 6,
+        "importPath": "app.src.convert_abstract",
+        "description": "app.src.convert_abstract",
+        "peekOfCode": "class EditorBase(metaclass=ABCMeta):\n    @abstractmethod\n    def dropna(self,this:pd.DataFrame)->pd.DataFrame:\n        this = this.dropna()\n        return this\nclass PrinterBase(metaclass=ABCMeta):\n    @abstractmethod\n    def print(self):\n        pass\nclass ReaderBase(metaclass=ABCMeta):",
+        "detail": "app.src.convert_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "PrinterBase",
+        "kind": 6,
+        "importPath": "app.src.convert_abstract",
+        "description": "app.src.convert_abstract",
+        "peekOfCode": "class PrinterBase(metaclass=ABCMeta):\n    @abstractmethod\n    def print(self):\n        pass\nclass ReaderBase(metaclass=ABCMeta):\n    @abstractmethod\n    def csv(self):\n        pass\n    @abstractmethod\n    def excel(self):",
+        "detail": "app.src.convert_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "ReaderBase",
+        "kind": 6,
+        "importPath": "app.src.convert_abstract",
+        "description": "app.src.convert_abstract",
+        "peekOfCode": "class ReaderBase(metaclass=ABCMeta):\n    @abstractmethod\n    def csv(self):\n        pass\n    @abstractmethod\n    def excel(self):\n        pass\n    @abstractmethod\n    def json(self):\n        pass",
+        "detail": "app.src.convert_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "ScraperBase",
+        "kind": 6,
+        "importPath": "app.src.convert_abstract",
+        "description": "app.src.convert_abstract",
+        "peekOfCode": "class ScraperBase(metaclass=ABCMeta):\n    @abstractmethod\n    def driver(self):\n        pass",
+        "detail": "app.src.convert_abstract",
+        "documentation": {}
+    },
+    {
+        "label": "Editor",
+        "kind": 6,
+        "importPath": "app.src.convert_util",
+        "description": "app.src.convert_util",
+        "peekOfCode": "class Editor(EditorBase):\n    def dropna(self,this:pd.DataFrame)->pd.DataFrame:\n        this.dropna(axis=0, inplace=True)\nclass Printer(PrinterBase):\n    def dframe(self, this:pd.DataFrame) -> None:\n        ic('*'*100)\n        ic(f'타입 : {type(this)}')\n        ic(f'column : {this.columns}')\n        ic(f'top 1 col : {this.head(1)}')\n        ic(f'null count : {this.isnul().sum()} 개')",
+        "detail": "app.src.convert_util",
+        "documentation": {}
+    },
+    {
+        "label": "Printer",
+        "kind": 6,
+        "importPath": "app.src.convert_util",
+        "description": "app.src.convert_util",
+        "peekOfCode": "class Printer(PrinterBase):\n    def dframe(self, this:pd.DataFrame) -> None:\n        ic('*'*100)\n        ic(f'타입 : {type(this)}')\n        ic(f'column : {this.columns}')\n        ic(f'top 1 col : {this.head(1)}')\n        ic(f'null count : {this.isnul().sum()} 개')\n        ic('*'*100)\nclass Reader(ReaderBase):\n    def __init__(self):",
+        "detail": "app.src.convert_util",
+        "documentation": {}
+    },
+    {
+        "label": "Reader",
+        "kind": 6,
+        "importPath": "app.src.convert_util",
+        "description": "app.src.convert_util",
+        "peekOfCode": "class Reader(ReaderBase):\n    def __init__(self):\n        pass\n    def csv(self,file) -> object:\n        return pd.read_csv(f'{file}',encoding='UTF-8', thousands=',')\n    def excel(self,file,header,usecols) -> object:\n        return pd.read_excel(f'{file}', header=header, usecols=usecols)\n    def json(self,file) -> object:\n        return json.load(open(f'{file}.json',encoding='UTF-8'))\n    def gmaps(self, api_key:str) -> object:",
+        "detail": "app.src.convert_util",
+        "documentation": {}
+    },
+    {
+        "label": "Scraper",
+        "kind": 6,
+        "importPath": "app.src.convert_util",
+        "description": "app.src.convert_util",
+        "peekOfCode": "class Scraper(ScraperBase):\n    def __init__(self):\n        pass\n    def driver(self, driver, url, selector, data) -> None:\n        return webdriver.Chrome('')\n    def auto_login(self, driver, url, selector, data) -> None:\n        driver.get(url)\n        driver.find_element_by_css_selector(selector).send_keys(data)\n        driver.find_element_by_css_selector(selector).submit()",
+        "detail": "app.src.convert_util",
+        "documentation": {}
+    },
+    {
+        "label": "NewsDataset",
+        "kind": 6,
+        "importPath": "app.src.news_dataset",
+        "description": "app.src.news_dataset",
+        "peekOfCode": "class NewsDataset:\n    _dname : str = ''\n    _sname : str = ''\n    _fname : str = ''\n    _id : str = ''\n    _label : str = ''\n    _title : str = ''\n    _keyword : str = ''\n    @property\n    def dname(self) -> str : return self._dname",
+        "detail": "app.src.news_dataset",
+        "documentation": {}
+    },
+    {
+        "label": "NewsModel",
+        "kind": 6,
+        "importPath": "app.src.news_model",
+        "description": "app.src.news_model",
+        "peekOfCode": "class NewsModel:\n    def __init__(self) -> None:\n        self.ds = NewsDataset()\n        # this = self.ds\n    def new_dataframe_with_index(self, fname: pd.DataFrame) -> pd.DataFrame:\n        this = self.ds\n        return pd.read_csv(f'{this.dname}{fname}',index_col=0)    \n    def new_dataframe_no_index(self, fname: str) -> object:\n        this = self.ds\n        return pd.read_csv(f'{this.dname}{fname}')",
+        "detail": "app.src.news_model",
+        "documentation": {}
+    },
+    {
+        "label": "NewsService",
+        "kind": 6,
+        "importPath": "app.src.news_service",
+        "description": "app.src.news_service",
+        "peekOfCode": "class NewsService:\n    dataset = NewsDataset()\n    def __init__(self) :\n        pass\n        self.data = self.dataset\n    def preprocess(self) :\n        print(f'전처리 시작')\n    def title(self) :\n        ic(f'제목 추출 시작')\nif __name__ == '__main__':",
+        "detail": "app.src.news_service",
+        "documentation": {}
+    },
+    {
+        "label": "read_root",
+        "kind": 2,
+        "importPath": "app.main_router",
+        "description": "app.main_router",
+        "peekOfCode": "def read_root(self):\n    # ScrapBugs.scrap()\n    ic(\"crawling\")\n    return {\"Hello\": \"crawling\"}",
+        "detail": "app.main_router",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.main_router",
+        "description": "app.main_router",
+        "peekOfCode": "router = APIRouter()\nrouter.include_router(title, prefix=\"/news\")\n@router.get(\"/crawling\")\ndef read_root(self):\n    # ScrapBugs.scrap()\n    ic(\"crawling\")\n    return {\"Hello\": \"crawling\"}",
+        "detail": "app.main_router",
+        "documentation": {}
+    },
+    {
+        "label": "read_root",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def read_root():\n    return {\"Hello\": \"World\"}\nif __name__ == \"__main__\":\n    uvicorn.run(router, host=\"localhost\", port=8000)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "router = FastAPI()\nrouter.include_router(router, prefix=\"/api\")\n@app.get(\"/\")\ndef read_root():\n    return {\"Hello\": \"World\"}\nif __name__ == \"__main__\":\n    uvicorn.run(router, host=\"localhost\", port=8000)",
+        "detail": "main",
+        "documentation": {}
+    }
+]
