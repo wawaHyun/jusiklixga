@@ -27,7 +27,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="w-screen h-screen">
           <ReduxProvider>
-        <div className="relative h-[80px] z-0 hover:z-50 ">
+        <div className="relative h-[80px] z-0 hover:z-50">
           <Header />
         </div>
         <div className="absolute z-0 w-screen h-screen">

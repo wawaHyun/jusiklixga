@@ -1,10 +1,17 @@
 'use server'
 
-import { INpsstasttype } from "@/app/api/jusik/model/nps-model";
 import client from "@/lib/db";
+import { INpstype } from "./model/nps-model";
 
 export async function AllNps() {
-    const response:INpsstasttype[] = await client.users.findMany({
+    const response:INpstype[] = await client.npsStat.findMany({})
+    return response
+}
+
+export async function ToptenNps() {
+    const response:INpstype[] = await client.npsStat.findMany({
+        take : 10,
+        orderBy : { perAll: 'desc' }
     })
     return response
 }

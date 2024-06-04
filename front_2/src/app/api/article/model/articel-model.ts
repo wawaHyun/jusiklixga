@@ -5,7 +5,5 @@ export declare type IArticletype = {
     content?: string| null,
     writer? : string| null,
     board? : string| null,
-    modDate?: string| null,
-    regDate?: string| null
 }
 

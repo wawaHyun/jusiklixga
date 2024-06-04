@@ -11,7 +11,17 @@ export default function Join() {
 
 
   const router = useRouter();
-  const [user, setUser] = useState<IUsertype>({ })
+  const [user, setUser] = useState<IUsertype>({
+  username: '',
+  password: '',
+  name: '',
+  age: '',
+  email: '',
+  address: '',
+  phone: '',
+  asset: '',
+  mbti: '',
+  investment_propensity: ''})
 
 
   const handleUserInfo = (e: any) => {
@@ -26,9 +36,11 @@ export default function Join() {
     try {
       const response = await AuthUser(user)
       console.log("Auth Info : " + JSON.stringify(response))
-      router.push(`${PG.BOARD}/listPrisma`)
     } catch (error) {
       console.log("Auth Prisma fail : " + error)
+    }
+    finally{
+      router.push(`${PG.USER}/joinrisma`)
     }
   }
 

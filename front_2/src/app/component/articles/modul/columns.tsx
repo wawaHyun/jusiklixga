@@ -67,24 +67,6 @@ export default function ArticleColumns(): GridColDef[] {
             flex: 0.04,
             minWidth: 30,
             sortable: false,
-            field: 'modDate',
-            headerName: 'MOD DATE',
-            renderCell: ({ row }: CellType) => MyTypography(row.modDate, "1.5rem")
-        },
-        {
-            headerAlign: 'center',
-            flex: 0.04,
-            minWidth: 30,
-            sortable: false,
-            field: 'regDate',
-            headerName: 'REG DATE',
-            renderCell: ({ row }: CellType) => MyTypography(row.regDate, "1.5rem")
-        },
-        {
-            headerAlign: 'center',
-            flex: 0.04,
-            minWidth: 30,
-            sortable: false,
             field: 'delete',
             headerName: 'DELETE',
             renderCell: ({ row }: CellType) =>

@@ -36,10 +36,12 @@ export default function ArticleSavePrisma() {
     console.log(JSON.stringify(data))
     try {
       await SaveArticle(data);
-      router.push(`${PG.ARTICLE}/mylist/${data.board}`)
     }
     catch (error) {
       console.log('article page onSubmit error : {}', error)
+    }
+    finally{
+      router.push(`${PG.BOARD}/list/${data.board}`)
     }
 
   }

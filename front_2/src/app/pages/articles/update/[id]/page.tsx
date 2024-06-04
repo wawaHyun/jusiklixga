@@ -3,7 +3,6 @@
 import { AttachFile, FmdGood, ThumbUpAlt } from '@mui/icons-material';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { useForm } from 'react-hook-form';
 import { PG } from '@/app/component/common/enums/PG';
 import { FindSingleArticle, UpdateAricle } from '@/app/api/article/route';
 import PinkButton from '@/app/atoms/button/PinkButton';
@@ -52,13 +51,16 @@ export default function ArticleUpdate({ params }: any) {
   const onSubmit = async () => {
     console.log("onsubmit : " + JSON.stringify(article));
     try {
-      const response = await UpdateAricle(article);
+      const response = await UpdateAricle(article)
+      alert("board1 : ")
+      router.push(`${PG.ARTICLE}/mylist/${response.board_id}`);
     }
     catch (error) {
       console.log('article page onSubmit error : {}', error)
+      alert("board3 : "+article.board)
     }
     finally{
-      router.push(`${PG.ARTICLE}/mylist/${article.board}`)
+
     }
   }
 
@@ -71,9 +73,7 @@ export default function ArticleUpdate({ params }: any) {
       .catch((error) => {
         console.log(error)
       })
-    // if (article !== null) {
-    //   console.log("single article : " + JSON.stringify(article));
-    // }
+
     allBoardlist()
   }, [])
 
@@ -113,7 +113,7 @@ export default function ArticleUpdate({ params }: any) {
         <div className="buttons flex">
           <div className="buttons flex gap-5 justify-center h-[50px]">
             <PinkButton text="게시글 수정" path={onSubmit} />
-            <PinkButton text="CANCEL" path={() => router.back()} />
+            {/* <PinkButton text="CANCEL" path={() => router.back()} /> */}
           </div>
         </div>
       </div>

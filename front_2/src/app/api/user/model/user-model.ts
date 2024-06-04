@@ -11,6 +11,4 @@ export declare type IUsertype = {
     mbti?: string| null,
     token? : string| null,
     investment_propensity?: string| null,
-    modDate?: string| null,
-    regDate?: string| null
 }

@@ -13,7 +13,7 @@ const data = {
       borderColor: 'rgb(54, 162, 235)',
       borderWidth: 2,
       data: [
-        { x: 'January', y: 4 },
+        { x: '삼성전자', y: 4 },
         { x: 'February', y: 2 },
         { x: 'March', y: 8 },
         { x: 'April', y: 1 },

@@ -71,12 +71,11 @@ export default function Boardcards() {
             </ul>
         </div>
         \
-        <div className="w-screen text-center mb-5">
+        <div className="w-screen text-center content-center  mb-5">
             <PinkButton text="게시판 관리" path={() => router.push(`${PG.BOARD}/detailPrisma`)} />
         </div>
 
-        <div className="flex flex-row ml-5 gap-5 items-center justify-center text-center mb-5">
-
+        <div className="flex flex-row ml-5 gap-5 items-center justify-center text-center mb-5 ">
             {boardlist && boardlist.map((elem: IBoardtype) => (
                 <div key={elem.id} className="w-screen text-center mb-5">
                     <CardButton key={elem.id} id={elem.id} title={elem.title || undefined}
