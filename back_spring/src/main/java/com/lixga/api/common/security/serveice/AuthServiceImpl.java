@@ -5,8 +5,8 @@ import java.time.LocalDateTime;
 
 import org.springframework.stereotype.Service;
 
-import com.lixga.api.common.component.Messenger;
-import com.lixga.api.user.model.UserDto;
+import com.lixga.api.common.component.security.Messenger;
+import com.lixga.api.user.domain.UserDto;
 import com.lixga.api.user.repository.UserRepository;
 
 import io.jsonwebtoken.Claims;

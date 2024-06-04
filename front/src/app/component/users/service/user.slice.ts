@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit"
-import { deleteUserById, fetchAllUsers, findUserById, modifyUserById, findCountUsers, loginUser, joinUser, existsByUsername } from "./user.service"
+import { deleteUserById, fetchAllUsers, findUserById, modifyUserById, findCountUsers, loginUser, joinUser, existsByUsername, logout } from "./user.service"
 import { IUser } from "../model/user.model"
 
 const userThunks = [fetchAllUsers]
@@ -40,7 +40,7 @@ export const userSlice = createSlice({
             .addCase(fetchAllUsers.fulfilled, (state: any, { payload }: any) => { state.array = payload })
             .addCase(findUserById.fulfilled, (state: any, { payload }: any) => { state.json = payload })
             .addCase(findCountUsers.fulfilled, (state: any, { payload }: any) => { state.count = payload })
-            .addCase(modifyUserById.fulfilled, (state: any, { payload }: any) => { state.array = payload })
+            .addCase(modifyUserById.fulfilled, (state: any, { payload }: any) => { state.json  = payload })
             .addCase(deleteUserById.fulfilled, (state: any, { payload }: any) => { state.json = payload })
             .addCase(loginUser.fulfilled, (state: any, { payload }: any) => { state.auth = payload })
             .addCase(joinUser.fulfilled, (state: any, { payload }: any) => { state.json = payload })

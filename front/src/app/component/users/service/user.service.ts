@@ -19,12 +19,12 @@ export const findCountUsers: any = createAsyncThunk(
 
 export const modifyUserById: any = createAsyncThunk(
     'users/modifyUserById',
-    async (id: IUser) => await modifyUserByIdAPI(id)
+    async (user: IUser) => await modifyUserByIdAPI(user)
 )
 
 export const deleteUserById: any = createAsyncThunk(
     'users/deleteUserById',
-    async (id: IUser) => await deleteUserByIdAPI(id)
+    async (id: number) => await deleteUserByIdAPI(id)
 )
 
 export const loginUser: any = createAsyncThunk(

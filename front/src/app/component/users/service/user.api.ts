@@ -3,7 +3,7 @@ import { IUser } from "../model/user.model"
 
 export const fetchAllUsersAPI = async (page: number) => {
     try {
-        const response = await instance().get('/api/users/list', {
+        const response = await instance().get('/users/list', {
             params: { page, limit: 10 } //1page 당 10 게시글
         })
         return response.data
@@ -15,7 +15,7 @@ export const fetchAllUsersAPI = async (page: number) => {
 
 export const findUserByIdAPI = async (id: number) => {
     try {
-        const response = await instance().get('/api/users/detail', {
+        const response = await instance().get('/users/detail', {
             params: { id }
         })
         return response.data
@@ -27,7 +27,7 @@ export const findUserByIdAPI = async (id: number) => {
 
 export const countUsersAPI = async () => {
     try {
-        const response = await instance().get('/api/users/count')
+        const response = await instance().get('/users/count')
 
         return response.data
     } catch (error) {
@@ -36,9 +36,9 @@ export const countUsersAPI = async () => {
     }
 }
 
-export const modifyUserByIdAPI = async (params: IUser) => {
+export const modifyUserByIdAPI = async (user: IUser) => {
     try {
-        const response = await instance().put('/api/users/modify', params)
+        const response = await instance().put('/users/modify', user)
         console.log("response ", JSON.stringify(response.data))
         return response.data
     } catch (error) {
@@ -47,10 +47,10 @@ export const modifyUserByIdAPI = async (params: IUser) => {
     }
 }
 
-export const deleteUserByIdAPI = async (props: IUser) => {
+export const deleteUserByIdAPI = async (id: number) => {
     try {
-        const response = await instance().delete('/api/users/delete', {
-            params: { props }
+        const response = await instance().delete('/users/delete', {
+            params: { id }
         })
         console.log("response ", response)
         return response.data
@@ -62,7 +62,7 @@ export const deleteUserByIdAPI = async (props: IUser) => {
 
 export const loginUserAPI = async (props: any) => {
     try {
-        const response = await instance().post('/api/users/login', props)
+        const response = await instance().post('/auth/login', props)
         return response.data
     } catch (error) {
         console.log(error, "loginUserByIdAPI EERR!!!")
@@ -72,7 +72,7 @@ export const loginUserAPI = async (props: any) => {
 
 export const joinUserAPI = async (props: any) => {
     try {
-        const response = await instance().post('/api/users/save', props)
+        const response = await instance().post('/users/save', props)
         console.log("response ", JSON.stringify(response.data))
         return response.data
     } catch (error) {
@@ -83,7 +83,7 @@ export const joinUserAPI = async (props: any) => {
 
 export const existsByUsernameAPI = async (username: string) => {
     try {
-        const response = await instance().get('/api/users/check', {
+        const response = await instance().get('/auth/exists-username', {
             params: {username} 
         })
         console.log("exist username response "+ response.data)
@@ -96,7 +96,7 @@ export const existsByUsernameAPI = async (username: string) => {
 
 export const logoutAPI = async () =>{
     try{
-        const response = await instance().get('/api/users/logout',)
+        const response = await instance().get('/users/logout',)
         console.log('logout response', JSON.stringify(response.data))
         return response.data
     }catch(error){

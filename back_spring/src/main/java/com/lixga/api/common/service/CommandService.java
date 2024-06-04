@@ -1,6 +1,6 @@
 package com.lixga.api.common.service;
 
-import com.lixga.api.common.component.Messenger;
+import com.lixga.api.common.component.security.Messenger;
 
 public interface CommandService<T> {
 
