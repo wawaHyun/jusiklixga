@@ -1,0 +1,36 @@
+version: "3.2"
+services:
+  database:
+    container_name: db-container
+    image: mysql:8.0.22
+    volumes:
+      - ~/docker/pql/db/etc/mysql/conf.d:/etc/mysql/conf.d:ro
+      - ~/docker/pql/db/var/lib/mysql:/var/lib/mysql
+      - ~/docker/pql/db/var/log/mysql:/var/log/mysql
+    environment:
+      - MYSQL_DATABASE=demodb
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_ROOT_HOST=%
+      - TZ = Asia/Seoul
+    command: ['--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
+    restart: always
+    ports:
+      - "3306:3306"
+    networks:
+      - db_env
+  application:
+    build: .
+    container_name: python-container
+    image: python
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    volumes:
+      - ./app:/code/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - database
+    networks:
+      - db_env
+networks:
+  db_env:
+    driver: bridge

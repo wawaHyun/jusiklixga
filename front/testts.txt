@@ -1,0 +1,13 @@
+testts
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+fddfdffggg
+gg
+g
+>>>>>>> feat_1
+=======
+fddfdffggg
+gg
+g
+>>>>>>> feat_2
