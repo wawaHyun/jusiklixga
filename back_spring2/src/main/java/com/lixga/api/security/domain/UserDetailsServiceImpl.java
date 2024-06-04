@@ -5,6 +5,7 @@ import java.util.Optional;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
 
 import com.lixga.api.user.domain.UserModel;
 import com.lixga.api.user.repository.UserRepository;
@@ -14,6 +15,7 @@ import lombok.RequiredArgsConstructor;
 
 @Getter
 @RequiredArgsConstructor
+@Service
 public class UserDetailsServiceImpl implements UserDetailsService{
 
     private final UserRepository repository;

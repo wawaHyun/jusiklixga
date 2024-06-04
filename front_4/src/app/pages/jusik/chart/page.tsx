@@ -13,7 +13,7 @@ export default function ChartPage() {
       <ul className="w-auto">
 
         fffff
-        <li className="w-[50%]"><NpsBarchart /></li>
+        <li className="w-[50%]"><Mychart /></li>
         {/* <li className="w-[50%]"><Bubble /></li> */}
       </ul>
     </div>

@@ -1,16 +1,30 @@
 version: "3"
 services:
+## mongodb
   database:
-    container_name: soccer-container
-    image: mysql:latest
+    container_name: mongo-container
+    image: mongo:latest
     environment:
-      - MYSQL_DATABASE=turingdb
-      - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_ROOT_HOST=%
+      - MONGO_INITDB_DATABASE=userdb
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=root
     command: ['--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
     restart: always
     ports:
-      - "3307:3306"
+      - "3308:3306"
+
+## mysql
+  # database:
+  #   container_name: soccer-container
+  #   image: mysql:latest
+  #   environment:
+  #     - MYSQL_DATABASE=turingdb
+  #     - MYSQL_ROOT_PASSWORD=root
+  #     - MYSQL_ROOT_HOST=%
+  #   command: ['--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
+  #   restart: always
+  #   ports:
+  #     - "3307:3306"
 
 #    networks:
 #      - test_env
