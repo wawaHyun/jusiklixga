@@ -8,7 +8,6 @@ export default function NewsPage() {
 
   const router = useRouter()
 
-
   interface NewsMenuProps {
     id: number;
     menu: string;

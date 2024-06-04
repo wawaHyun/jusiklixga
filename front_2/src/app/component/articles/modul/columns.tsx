@@ -3,7 +3,6 @@ import { Link } from '@mui/material'
 import { GridColDef } from '@mui/x-data-grid'
 import { MyTypography } from '../../common/style/cell';
 import { PG } from '../../common/enums/PG';
-import { useDispatch } from 'react-redux';
 import PinkButton from '@/app/atoms/button/PinkButton';
 import { DeleteArticle } from '@/app/api/article/route';
 import { IArticletype } from '@/app/api/article/model/articel-model';
@@ -41,7 +40,6 @@ export default function ArticleColumns(): GridColDef[] {
             field: 'title',
             headerName: 'TITLE',
             renderCell: ({ row }: CellType) =>
-                // MyTypography(<Link href={`${PG.ARTICLE}/detail/${row.id}`}> {row.title} </Link>, "1.5rem")
                 MyTypography(<Link href={`${PG.ARTICLE}/update/${row.id}`}> {row.title} </Link>, "1.5rem")
         },
         {
@@ -77,7 +75,6 @@ export default function ArticleColumns(): GridColDef[] {
                         let flag = confirm(id + "번째 article을 삭제하시겠습니까?")
                         if (flag) {
                             console.log("delete article id : {}", id)
-                            // dispatch(deleteArticleById(id))
                             deletee(id)
                             location.reload();
                         } else {

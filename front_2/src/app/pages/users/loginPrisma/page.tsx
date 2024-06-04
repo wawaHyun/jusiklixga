@@ -8,8 +8,6 @@ import { NextPage } from "next"
 import { ExistUser, LoginUser } from "@/app/api/user/route";
 import { IUsertype } from "@/app/api/user/model/user-model";
 import React from "react";
-import { parseCookies, setCookie } from "nookies";
-import { jwtDecode } from "jwt-decode";
 import MoveBotton from "@/app/atoms/button/MoveButton";
 
 const Login: NextPage = () => {

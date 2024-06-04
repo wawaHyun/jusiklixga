@@ -6,7 +6,6 @@ import { CallIcon, ChartIcon, HomeIcon, ListIcon, MailIcon, NewsIcon } from '@/a
 import { PG } from '../enums/PG';
 import { useState } from "react";
 import { LogoutUser } from "@/app/api/user/route";
-import { jwtDecode } from "jwt-decode";
 
 
 function Header() {

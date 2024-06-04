@@ -1,14 +1,12 @@
 'use client'
 
-import { useRouter } from "next/navigation";
-
-interface IMoveButton {
+interface IPinkButton {
     text: string,
     path: any
 }
 
 
-export default function PinkButton({ text, path }: IMoveButton) {
+export default function PinkButton({ text, path }: IPinkButton) {
     
     return (
     <button key={1} className="overflow-hidden relative w-64 bg-blue-500 text-white rounded-xl font-bold -- before:block before:absolute before:h-full before:w-1/2 before:rounded-full 

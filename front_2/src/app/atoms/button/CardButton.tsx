@@ -2,13 +2,19 @@
 
 import { PG } from "@/app/component/common/enums/PG";
 import Link from "next/link";
-import Image from 'next/image'
-import { HomeIcon } from "../icons/icons";
 import MoveButton from "./MoveButton";
+import { useRouter } from "next/navigation";
 
+interface ICardButton {
+    id: number,
+    title?: string ,
+    description?: string ,
+    img? : any
+}
 
+export default function CardButton({ id, title, description, img }: ICardButton) {
 
-export default function CardButton({ id, title, description, img }: IBoard) {
+    const router = useRouter()
     return (
         <div key={id} className="max-w-sm bg-white-500 border items-center border-gray-200 rounded-lg shadow ">
             <Link href={`${PG.ARTICLE}/mylist/${id}`}>
@@ -22,13 +28,13 @@ export default function CardButton({ id, title, description, img }: IBoard) {
                         {title}
                     </h5>
                 </Link>
-                <p className="mb-3 font-normal text-gray-700 ">
+                <div className="mb-3 font-normal text-gray-700 ">
                     {description}
-                </p>
-                <p className="h-[35px]">
-                <MoveButton text={title +" Read more"} path={()=>`${PG.ARTICLE}/mylist/${id}`}/>
-                </p>
+                </div>
+                <div className="h-[35px]">
+                <MoveButton text={title +" Read more"} path={()=>router.push(`${PG.ARTICLE}/mylist/${id}`)}/>
+                </div>
             </div>
-        </div>
+        </div>  
     )
 }

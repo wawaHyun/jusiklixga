@@ -3,11 +3,9 @@
 import { IBoardtype } from "@/app/api/board/model/board-model";
 import { AllBoardList, UpdateBoard } from "@/app/api/board/route";
 import CardButton from "@/app/atoms/button/CardButton"
-import MoveButton from "@/app/atoms/button/MoveButton";
 import PinkButton from "@/app/atoms/button/PinkButton";
-import { CallIcon, ChartIcon, ListIcon, NewsIcon } from "@/app/atoms/icons/icons";
+import {  ListIcon } from "@/app/atoms/icons/icons";
 import { PG } from "@/app/component/common/enums/PG";
-import { MyTypography } from "@/app/component/common/style/cell";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -72,20 +70,14 @@ export default function Boardcards() {
         </div>
         \
         <div className="w-screen text-center content-center  mb-5">
-            <PinkButton text="게시판 관리" path={() => router.push(`${PG.BOARD}/detailPrisma`)} />
+            <PinkButton text="게시판 관리" path={() => router.push(`${PG.BOARD}/savePrisma`)} />
         </div>
 
         <div className="flex flex-row ml-5 gap-5 items-center justify-center text-center mb-5 ">
-            {boardlist && boardlist.map((elem: IBoardtype) => (
+            {boardlist && boardlist.map((elem: IBoardtype, i:number) => (
                 <div key={elem.id} className="w-screen text-center mb-5">
-                    <CardButton key={elem.id} id={elem.id} title={elem.title || undefined}
-                        description={elem.description || undefined} img={<ListIcon />} />
-                    {/* <div>
-                        {MyTypography(<input type="radio" name="id" defaultValue={elem.id} onChange={handleInput} />, "1.5rem")}
-                        {MyTypography(<input className="border" type="text" name="title" defaultValue={'' + elem.title} onChange={handleInput} />, "1.5rem")}
-                        {MyTypography(<input className="border" type="text" name="description" defaultValue={'' + elem.description} onChange={handleInput} />, "1.5rem")}
-                        <MoveButton text="수정하기" path={() => handleUpdate(inputValue)} />
-                    </div> */}
+                    <CardButton id={elem.id} title={elem.title||undefined} 
+                        description={elem.description||undefined} img={<ListIcon />} />
                 </div>
             ))}
         </div>
