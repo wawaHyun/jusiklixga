@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.flux.demo.FluxAndMonoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-04T04:19:20" hostname="DKDLXL" time="0.153">
+  <properties/>
+  <testcase name="Flux create() sample" classname="com.flux.demo.FluxAndMonoTest" time="0.153"/>
+  <system-out><![CDATA[MY-ERROR Mono 의 예외가 발생했습니다.
+MY-ERROR Flux 의 예외가 발생했습니다.
+3 * 0 = 0
+3 * 1 = 3
+3 * 2 = 6
+3 * 3 = 9
+3 * 4 = 12
+3 * 5 = 15
+3 * 6 = 18
+3 * 7 = 21
+3 * 8 = 24
+3 * 9 = 27
+3 * 10 = 30
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
