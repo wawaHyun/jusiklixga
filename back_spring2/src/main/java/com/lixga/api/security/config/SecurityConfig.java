@@ -5,17 +5,10 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.DefaultSecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.lixga.api.security.domain.SecurityProvider;
-import com.lixga.api.security.filter.SecurityFilter;
 
-public class SecurityConfig extends SecurityConfigurerAdapter<DefaultSecurityFilterChain, HttpSecurity>{
-    private final SecurityProvider provider;
+import lombok.RequiredArgsConstructor;
 
-
-    @Override
-    public void configure(HttpSecurity builder) throws Exception {
-        SecurityFilter filter = new SecurityFilter(provider);
-        builder.addFilterBefore(filter, UsernamePasswordAuthenticationFilter.class);
-    }
+@RequiredArgsConstructor
+public class SecurityConfig {
 
 }
