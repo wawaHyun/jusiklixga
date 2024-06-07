@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.lixga.api.user.domain.UserModel;
 
 @Repository
-public interface UserRepository extends JpaRepository{
+public interface UserRepository extends JpaRepository<UserModel, Long> {
 
     Optional<UserModel> findByUsername(String username);
     

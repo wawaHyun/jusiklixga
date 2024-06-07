@@ -27,7 +27,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/app/pages/jusik/SE/news/page.tsx",
-    "src/app/component/jusik/mychart.js"
+    "src/app/component/jusik/chart/mychart.js"
   ],
   "exclude": ["node_modules"]
 }

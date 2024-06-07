@@ -18,10 +18,10 @@ public class UserDateilsControlloer implements AuthenticationProvider {
 
     private final UserDetailsServiceImpl detailsServiceImpl;
     
-    @Value("${jwt.secret:secret-key}")
+    @Value("${jwt.secret}")
     private String securityKey;
     
-    @Value("${jwt.expiration:3600000}")
+    @Value("${jwt.expiration}")
     private long validtyInMs = 3600000; // 1h
 
     @Override

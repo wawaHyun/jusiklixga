@@ -14,7 +14,6 @@ import { IArticletype } from '@/app/api/article/model/articel-model';
 
 
 export default function ArticleUpdate({ params }: any) {
-
   const router = useRouter();
   const [boardlist, setBoardList] = useState<IBoardtype[]>([])
   const [article, setArticle] = useState<IArticletype>({ id: params.id })
@@ -53,12 +52,14 @@ export default function ArticleUpdate({ params }: any) {
     console.log("onsubmit : " + JSON.stringify(article));
     try {
       const response = await UpdateAricle(article);
+      if (response.id !== undefined) {
+        alert(response.id)
+        alert(response.board_id)
+        router.push(`${PG.ARTICLE}/mylist/${response.board_id}`)
+      }
     }
     catch (error) {
       console.log('article page onSubmit error : {}', error)
-    }
-    finally{
-      router.push(`${PG.ARTICLE}/mylist/${article.board}`)
     }
   }
 
@@ -93,9 +94,9 @@ export default function ArticleUpdate({ params }: any) {
         </select>
 
         <input className="title bg-gray-100 border border-gray-300 p-2 mb-4 outline-none" placeholder={article.title + ''}
-          type="text" onChange={handleArticleInfo} name="title"/>
+          type="text" onChange={handleArticleInfo} name="title" />
         <textarea className="description bg-gray-100 sec p-3 h-60 border border-gray-300 outline-none" placeholder={article.content + ''}
-          onChange={handleArticleInfo} name="content"/>
+          onChange={handleArticleInfo} name="content" />
 
         <div className="icons flex text-gray-500 m-2">
           <svg className="mr-2 cursor-pointer hover:text-gray-700 border rounded-full p-1 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
