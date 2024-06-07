@@ -1,0 +1,49 @@
+spring:
+  application:
+    name: api
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://101.79.8.41:3307/secudb
+    username: root
+    password: root
+  sql:
+    init:
+      platform: mysql
+      mode: always
+      encoding: utf-8
+  jpa:
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        jdbc:
+          lob:
+            "[non_contextual_creation]": true
+        "[format_sql]": true
+    show-sql: true
+  #  open-in-view: true
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type: trace
+      springframework:
+        security : DEBUG
+        web : DEBUG
+        SQL: DEBUG
+        data : DEBUG
+        hibernate : DEBUG
+        jpa : DEBUG
+        jwt : DEBUG
+        bezkoder : DEBUG
+jwt:
+  secret: turingturingturingturingturingturingturingturingturing
+  expiration: 3600000 # a day
+  refresh-token:
+    expiration: 25200000 # a week
+  iss : turing.co.kr
+server:
+  port: 8081

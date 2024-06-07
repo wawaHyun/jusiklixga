@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="23021aa2-93bd-487e-bc18-27454806b360" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../back_spring/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../back_spring/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_spring2/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../back_spring2/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_spring2/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../back_spring2/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_spring2/src/main/java/com/lixga/api/items/repository/ItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../back_spring2/src/main/java/com/lixga/api/items/repository/ItemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_spring2/src/main/java/com/lixga/api/items/service/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../back_spring2/src/main/java/com/lixga/api/items/service/ItemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_spring2/src/main/java/com/lixga/api/security/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../back_spring2/src/main/java/com/lixga/api/security/config/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_spring2/src/main/java/com/lixga/api/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../back_spring2/src/main/java/com/lixga/api/security/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_spring2/src/main/java/com/lixga/api/security/controller/UserDateilsControlloer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../back_spring2/src/main/java/com/lixga/api/security/controller/UserDateilsControlloer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_spring2/src/main/java/com/lixga/api/security/filter/CutomRequestFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_spring2/src/main/java/com/lixga/api/security/filter/TokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/../back_spring2/src/main/java/com/lixga/api/security/filter/TokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_spring2/src/main/java/com/lixga/api/security/service/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../back_spring2/src/main/java/com/lixga/api/security/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_spring2/src/main/java/com/lixga/api/user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../back_spring2/src/main/java/com/lixga/api/user/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_spring2/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../back_spring2/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2hOgSU3dEDld50WFZKQZe6OmJnU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.FluxAndMonoTest.FluxCreateTest.executor": "Run",
+    "Gradle.FluxAndMonoTest.FluxGeneratorTest.executor": "Run",
+    "Gradle.FluxAndMonoTest.justTest (1).executor": "Run",
+    "Gradle.FluxAndMonoTest.justTest.executor": "Run",
+    "Gradle.FluxAndMonoTest.monoJustTest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feat__3",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/bitcamp/Gisa/lixgit/webflux",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bitcamp\Gisa\lixgit\back_spring_3\src\test\java\com\flux\demo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.FluxAndMonoTest.FluxGeneratorTest">
+    <configuration name="FluxAndMonoTest.FluxCreateTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.flux.demo.FluxAndMonoTest.FluxCreateTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="FluxAndMonoTest.FluxGeneratorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.flux.demo.FluxAndMonoTest.FluxGeneratorTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="FluxAndMonoTest.justTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.flux.demo.FluxAndMonoTest.justTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="FluxAndMonoTest.justTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;FluxAndMonoTest.justTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="FluxAndMonoTest.monoJustTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.flux.demo.FluxAndMonoTest.monoJustTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="demo.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.flux.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.FluxAndMonoTest.FluxGeneratorTest" />
+        <item itemvalue="Gradle.FluxAndMonoTest.FluxCreateTest" />
+        <item itemvalue="Gradle.FluxAndMonoTest.monoJustTest" />
+        <item itemvalue="Gradle.FluxAndMonoTest.justTest (1)" />
+        <item itemvalue="Gradle.FluxAndMonoTest.justTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="23021aa2-93bd-487e-bc18-27454806b360" name="Changes" comment="" />
+      <created>1717470538789</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717470538789</updated>
+      <workItem from="1717470539858" duration="5315000" />
+      <workItem from="1717568515912" duration="22000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
