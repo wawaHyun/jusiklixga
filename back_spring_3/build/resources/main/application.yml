@@ -3,14 +3,10 @@ spring:
         name: webflux
     data:
         mongodb:
-            # uri: mongodb://root:root@101.79.8.41:27018/users
-            # uri: mongodb://root:root@101.79.8.41:271018/users?retryWrites=true&w=majority
             host: 101.79.8.41
             port: 27018
             authentication-database: admin
             database: users
-            # username : root
-            # password : root
     sql:
         init:
             platform: mongo
