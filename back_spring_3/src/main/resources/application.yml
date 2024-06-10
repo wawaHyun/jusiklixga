@@ -1,0 +1,22 @@
+spring:
+    application:
+        name: webflux
+    data:
+        mongodb:
+            uri : mongodb://root:root@101.79.8.41:27017/rootdb
+            # host: 101.79.8.41
+            # port: 27018
+            # authentication-database: admin
+            # database: users
+    sql:
+        init:
+            platform: mongo
+            mode: always
+logging:
+    level:
+        org:
+            hibernate:
+                SQL: debug
+                type: trace
+server:
+  port: 8081

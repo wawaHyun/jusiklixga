@@ -6,7 +6,6 @@ import "./globals.css";
 import dynamic from "next/dynamic";
 import Header from "./component/common/module/header";
 import { useEffect, useState } from "react";
-import { getAuth } from "./component/users/service/user.slice";
 import { useSelector } from "react-redux";
 import Footer from "./component/common/module/footer";
 

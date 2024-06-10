@@ -7,7 +7,10 @@ import org.springframework.stereotype.Service;
 import com.lixga.api.user.domain.UserModel;
 import com.lixga.api.user.repository.UserRepository;
 
+import lombok.RequiredArgsConstructor;
+
 @Service
+@RequiredArgsConstructor
 public class UserServiceImpl implements UserService{
 
     private final UserRepository repo;

@@ -1,69 +1,18 @@
 'use server'
 
 import client from "@/lib/db";
-import { NextResponse } from "next/server";
-import { IUsertype } from "./model/nps-model";
+import { INpstype } from "./model/nps-model";
 
-export async function SingleUser(id: number) {
-    const response = await client.users.findFirst({
-        where: { id: id },
+export async function AllNps() {
+    const response: INpstype[] = await client.npsStat.findMany({
     })
     return response
 }
 
-export async function ExistUser(username: string) {
-    console.log("ExistUserAPI : " + username);
-    const response = await client.users.findFirst({
-        where: { username: username },
+export async function Top10Nps() {
+    const response: INpstype[] = await client.npsStat.findMany({
+        take: 10,
     })
+    console.log("Top10Nps : "+JSON.stringify(response))
     return response
-}
-
-export async function LoginUser(user: IUsertype) {
-    console.log("LoginUserAPI : "+user.id);
-    const {id, username, password } = user;
-    const response = await client.users.update({
-        where: {
-            id : id,
-            username: username,
-            password: password,
-        },
-        data: {
-            token: "login token add"
-        }
-    });
-    console.log("LoginUserAPI : "+response)
-    return response
-}
-
-export async function LogoutUser(id: number) {
-    const response = await client.users.update({
-        where: {
-            id : id,
-        },
-        data: {
-            token: ""
-        }
-    });
-    console.log("LoginUserAPI : "+response)
-    return response
-}
-
-export async function AuthUser(user: IUsertype) {
-    const { username, password, phone, name, age, email, address, asset, mbti, investment_propensity } = user;
-    const response = await client.users.create({
-        data: {
-            username: username,
-            password: password,
-            name:name,
-            phone: phone,
-            age: age,
-            email: email,
-            address: address,
-            asset: asset,
-            mbti: mbti,
-            investment_propensity: investment_propensity,
-        },
-    });
-    return NextResponse.json({ message: "success", data: response })
 }

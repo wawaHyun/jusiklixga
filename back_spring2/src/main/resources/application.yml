@@ -3,7 +3,7 @@ spring:
     name: api
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://101.79.8.41:3307/turingdb
+    url: jdbc:mysql://101.79.8.41:3307/secudb
     username: root
     password: root
   sql:
@@ -28,11 +28,22 @@ logging:
   level:
     org:
       hibernate:
-        SQL: debug
+        SQL: DEBUG
         type: trace
+      springframework:
+        security : DEBUG
+        web : DEBUG
+        SQL: DEBUG
+        data : DEBUG
+        hibernate : DEBUG
+        jpa : DEBUG
+        jwt : DEBUG
+        bezkoder : DEBUG
 jwt:
-  iss: turing.co.kr
-  exp: 24*60*60*1000
   secret: turingturingturingturingturingturingturingturingturing
+  expiration: 3600000 # a day
+  refresh-token:
+    expiration: 25200000 # a week
+  iss : turing.co.kr
 server:
   port: 8081
