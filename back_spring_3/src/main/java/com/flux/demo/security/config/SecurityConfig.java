@@ -2,89 +2,46 @@ package com.flux.demo.security.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
-import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
-import org.springframework.security.config.annotation.web.configurers.HeadersConfigurer;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.web.SecurityFilterChain;
-import org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter;
-import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
-import com.flux.demo.security.filter.CustomRequestFilter;
-import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpMethod;
+import org.springframework.security.authentication.ReactiveAuthenticationManager;
+import org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity;
+import org.springframework.security.config.web.server.SecurityWebFiltersOrder;
+import org.springframework.security.config.web.server.ServerHttpSecurity;
+import org.springframework.security.web.server.SecurityWebFilterChain;
+import org.springframework.security.web.server.authentication.AuthenticationWebFilter;
+import org.springframework.security.web.server.authentication.ServerAuthenticationConverter;
 
-@RequiredArgsConstructor
+import lombok.extern.slf4j.Slf4j;
+
 @Configuration
-@EnableWebSecurity // 스프링 시큐리티 필터가 스프링 필터체인에 등록이 됨
+@EnableWebFluxSecurity
+@Slf4j
 public class SecurityConfig {
+
         // 개발자가 기획에 따라 커스터마이징 해야 함
-        // private final CustomRequestFilter jwtAuthenticationFilter ;
-        // private final UserDetailsService customerUserDetailsService ;
-        @Bean
-        public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-                AuthenticationManagerBuilder managerBuilder = http.getSharedObject(AuthenticationManagerBuilder.class);
-                AuthenticationManager manager = managerBuilder.build();
-                http.authenticationManager(manager);
+//     private final CustomRequestFilter jwtAuthenticationFilter ;
+//     private final UserDetailsService customerUserDetailsService ;
 
-                http
-                                .csrf(AbstractHttpConfigurer::disable)
-                                .authorizeHttpRequests(authorizeRequest -> authorizeRequest
-                                                .requestMatchers(
-                                                                AntPathRequestMatcher.antMatcher("/admin/**"))
-                                                .authenticated()
-                                                .requestMatchers(
-                                                                AntPathRequestMatcher.antMatcher("/**"),
-                                                                AntPathRequestMatcher.antMatcher("/error"),
-                                                                AntPathRequestMatcher.antMatcher("/api/login/**"),
-                                                                AntPathRequestMatcher.antMatcher("/api/v1/join/**"),
-                                                                AntPathRequestMatcher.antMatcher("/swagger-ui/**"),
-                                                                AntPathRequestMatcher
-                                                                                .antMatcher("/swagger-resources/**"),
-                                                                AntPathRequestMatcher.antMatcher("/v3/api-docs/**"))
-                                                .permitAll()
+    @Bean
+    SecurityWebFilterChain springSecurityFilterChain(ServerHttpSecurity http,
+                                                     ReactiveAuthenticationManager authenticationManager,
+                                                     ServerAuthenticationConverter authenticationConverter) {
+        AuthenticationWebFilter authenticationWebFilter = new AuthenticationWebFilter(authenticationManager);
+        authenticationWebFilter.setServerAuthenticationConverter(authenticationConverter);
 
-                                )
-                                // .addFilterAt(
-                                // this.abstractAuthenticationProcessingFilter(manager),
-                                // UsernamePasswordAuthenticationFilter.class)
-                                .headers(
-                                                headersConfigurer -> headersConfigurer
-                                                                .frameOptions(
-                                                                                HeadersConfigurer.FrameOptionsConfig::sameOrigin)
-                                                                .contentSecurityPolicy(policyConfig -> policyConfig
-                                                                                .policyDirectives(
-                                                                                                "script-src 'self'; "
-                                                                                                                + "img-src 'self'; "
-                                                                                                                +
-                                                                                                                "font-src 'self' data:; "
-                                                                                                                + "default-src 'self'; "
-                                                                                                                +
-                                                                                                                "frame-src 'self'")));
-                return http.build();
-        }
+        log.info("--------------------------- 스프링 시큐리티 설정파일 진입 ---------------------------");
+        return http
+                .authorizeExchange(exchanges -> exchanges
+                        .pathMatchers(HttpMethod.POST, "/api/login").permitAll()
+                        .anyExchange().authenticated()
+                )
+                .addFilterAt(authenticationWebFilter, SecurityWebFiltersOrder.AUTHENTICATION)
+                .httpBasic(ServerHttpSecurity.HttpBasicSpec::disable)
+                .formLogin(ServerHttpSecurity.FormLoginSpec::disable)
+                .csrf(ServerHttpSecurity.CsrfSpec::disable)
+                .cors(ServerHttpSecurity.CorsSpec::disable)
+                .build();
+    }
 
-        public AbstractAuthenticationProcessingFilter abstractAuthenticationProcessingFilter(
-                        final AuthenticationManager manager) {
-                // CustomRequestFilter filter = new CustomRequestFilter(
-                // "/api/login",
-                // manager
-                // );
-                CustomRequestFilter filter = null;
-                return null;
-        }
 
-        @Bean
-        public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration)
-                        throws Exception {
-                return authenticationConfiguration.getAuthenticationManager();
-        }
-
-        @Bean
-        public PasswordEncoder passwordEncoder() {
-                return new BCryptPasswordEncoder();
-        }
 }

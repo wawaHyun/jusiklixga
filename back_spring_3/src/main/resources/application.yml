@@ -20,3 +20,6 @@ logging:
                 type: trace
 server:
   port: 8081
+jwt:
+    secret: 'turing-secret'
+    expiration : 86400000

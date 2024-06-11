@@ -1,5 +1,6 @@
 package com.flux.demo.user.domain;
 
+import io.swagger.annotations.ApiModelProperty;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import lombok.Data;
@@ -10,12 +11,12 @@ import java.util.List;
 @Component
 public class UserDto {
 
-    long userId;
-    String username;
-    String password;
-    String name;
-    String email;
-    String regDate;
-    String token;
+    @ApiModelProperty(position = 0) private long userId;
+    @ApiModelProperty(position = 1) private String username;
+    @ApiModelProperty(position = 2) private String password;
+    @ApiModelProperty(position = 3) private String name;
+    @ApiModelProperty(position = 4) private String email;
+    @ApiModelProperty(position = 5) private String regDate;
+    @ApiModelProperty(position = 6) private String token;
     // List<Role> roles;
 }

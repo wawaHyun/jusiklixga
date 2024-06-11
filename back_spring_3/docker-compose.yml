@@ -1,9 +1,10 @@
 version: "3.2"
 services:
   database:
-    container_name: db-container
+    container_name: mongo-container
     image: mongo
     volumes:
+      # - ./data/mongodb2:/data/db
       - ~/docker/mongo/db/etc/mongo/conf.d:/etc/mongo/conf.d:ro
       - ~/docker/mongo/db/var/lib/mongo:/var/lib/mongo
       - ~/docker/mongo/db/var/log/mongo:/var/log/mongo
@@ -19,11 +20,11 @@ services:
   application:
     build: .
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mongo://db-container:3306/rootdb
+      SPRING_DATASOURCE_URL: jdbc:mongo://mongo-container:3306/rootdb
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root
     ports:
-      - "8080:8080"
+      - "8081:8080"
     depends_on:
       - database
     networks:
