@@ -22,7 +22,7 @@ export default function Home() {
 					<h1 className="text-2xl">Welcome!</h1>
 					<Link
 						className="btn btn-primary"
-						href="/login"
+						href="/login2"
 					>
 						Login
 					</Link>

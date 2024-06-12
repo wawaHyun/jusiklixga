@@ -6,7 +6,7 @@ spring:
         name: rootapp
     data:
         mongodb:
-            uri: mongodb://root:root@db-container:27017/rootdb
+            uri: mongodb://root:root@101.79.8.41:27018/admin
     sql:
         init:
             mode: always
@@ -21,3 +21,6 @@ logging:
 jwt:
     secret: bitcamp
     expiration: 86400000
+
+server : 
+    port: 8081

@@ -4,7 +4,7 @@ import React, { useRef, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { useApp } from '@/contexts/AppContext';
 
-import { I_ApiUserLoginRequest, I_ApiUserLoginResponse } from '../api/login/route';
+import { I_ApiUserLoginRequest, I_ApiUserLoginResponse } from '../api/login1/route';
 
 export default function LoginPage() {
 	const { userData, setUserData } = useApp();
@@ -37,44 +37,47 @@ export default function LoginPage() {
 				password: passwordRef.current?.value,
 			};
 
-			// console.log(`1 - 페이로드 정보 : ${JSON.stringify(payload)}`)
+			console.log(`1 - 페이로드 정보 : ${JSON.stringify(payload)}`)
 
-			// const response = await fetch('/api/hello', {
-			// 	method: 'GET',
-			// 	headers: {
-			// 		'Content-Type': 'application/json',
-			// 	}
-			// });
+			// ------------------------------------------------------------- 1
 
-			// -------------------------------------------------------------
+			const response = await fetch('/api/hello', {
+				method: 'GET',
+				headers: {
+					'Content-Type': 'application/json',
+				}
+			});
+			const data1 = await response.json()
+			console.log(`2 - fetch('/api/hello 자바를 다녀 온 정보 :${JSON.stringify(data1)} `)
 
-			// const response = await fetch('/api/login', {
-			// 	method: 'POST',
-			// 	headers: {
-			// 		'Content-Type': 'application/json',
-			// 	},
-			// 	body: JSON.stringify(payload),
-			// });
+			// ------------------------------------------------------------- 2
 
-			// -------------------------------------------------------------
+			const response2 = await fetch('/api/login1', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify(payload),
+			});
+			const data2 = await response2.json()
+			console.log(`3 - fetch('/api/login 자바를 다녀 온 정보 :${JSON.stringify(data2)} `)
 
-			const response = await fetch('http://localhost:8080/api/users/login', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-				'API-Key': process.env.DATA_API_KEY!,
-			},
-			body: JSON.stringify({ time: new Date().toISOString() }),
+			// ------------------------------------------------------------- 3
+
+			const response3 = await fetch('http://localhost:8081/api/users/login', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+					'API-Key': process.env.DATA_API_KEY!,
+				},
+				body: JSON.stringify({ time: new Date().toISOString() }),
 			})
-		
-			const data2 = await response.json()
 
-			console.log(`3 - 자바를 다녀 온 정보 :${JSON.stringify(data2)} `)
+			const data3 = await response3.json()
+			console.log(`4 - fetch('http:// 자바를 다녀 온 정보 :${JSON.stringify(data3)} `)
 
-
-
-			const data: I_ApiUserLoginResponse = await response.json();
-			console.log(`4 - login/route 에서 온 정보 :${JSON.stringify(data)} `)
+			const data: I_ApiUserLoginResponse = await response3.json();
+			console.log(`5 - login/route 에서 온 정보 :${JSON.stringify(data)} `)
 			// -------------------------------------------------------------
 
 			if (data.success) {

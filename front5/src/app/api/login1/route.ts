@@ -18,18 +18,18 @@ export const dynamic = 'force-dynamic';
 
 export async function POST() {
 	console.log(`2 - POST 정보 : 진입 성공 `)
-	// const res = await fetch('http://localhost:8080/api/users/login', {
-	//   method: 'POST',
-	//   headers: {
-	// 	'Content-Type': 'application/json',
-	// 	'API-Key': process.env.DATA_API_KEY!,
-	//   },
-	//   body: JSON.stringify({ time: new Date().toISOString() }),
-	// })
+	const res = await fetch('http://localhost:8081/api/users/login', {
+	  method: 'POST',
+	  headers: {
+		'Content-Type': 'application/json',
+		'API-Key': process.env.DATA_API_KEY!,
+	  },
+	  body: JSON.stringify({ time: new Date().toISOString() }),
+	})
    
-	// const data = await res.json()
+	const data = await res.json()
 
-	// console.log(`3 - 자바를 다녀 온 정보 :${JSON.stringify(data)} `)
+	console.log(`3 - 자바를 다녀 온 정보 :${JSON.stringify(data)} `)
 
 	const greeting = "Login Next 14 !!"
     const json = {
